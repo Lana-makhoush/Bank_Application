@@ -1,0 +1,364 @@
+[
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountController",
+    "Method": "AddAccount",
+    "RelativePath": "api/Account/add-account/{clientId}/{accountTypeId}/1",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "accountTypeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Balance",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountController",
+    "Method": "GetAccountByClientAccountId",
+    "RelativePath": "api/Account/GetAccountByClientAccountId/{clientAccountId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientAccountId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountController",
+    "Method": "GetAllAccounts",
+    "RelativePath": "api/Account/GetAllAccounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountController",
+    "Method": "UpdateAccount",
+    "RelativePath": "api/Account/UpdateAccount/{clientAccountId}/{newAccountTypeId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientAccountId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newAccountTypeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Balance",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountTypeController",
+    "Method": "GetById",
+    "RelativePath": "api/AccountType/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountTypeController",
+    "Method": "Add",
+    "RelativePath": "api/AccountType/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TypeName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AnnualInterestRate",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "DailyWithdrawalLimit",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "MonthlyFee",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "TermsAndConditions",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountTypeController",
+    "Method": "GetAll",
+    "RelativePath": "api/AccountType/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountTypeController",
+    "Method": "Delete",
+    "RelativePath": "api/AccountType/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountTypeController",
+    "Method": "Edit",
+    "RelativePath": "api/AccountType/edit/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "TypeName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AnnualInterestRate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DailyWithdrawalLimit",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MonthlyFee",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TermsAndConditions",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.ClientController",
+    "Method": "AddClient",
+    "RelativePath": "api/Client/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MiddleName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdentityNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdentityImage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdentityImagePath",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncomeSource",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MonthlyIncome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AccountPurpose",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Phone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.FeatureController",
+    "Method": "AddFeature",
+    "RelativePath": "api/Feature/Add_Feature",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.FeatureController",
+    "Method": "AssignFeature",
+    "RelativePath": "api/Feature/assign-Feature-to-AccountType/{featureId}/{accountTypeId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "featureId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "accountTypeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.FeatureController",
+    "Method": "GetFeaturesByAccountType",
+    "RelativePath": "api/Feature/by-account-type/{accountTypeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountTypeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.FeatureController",
+    "Method": "DeleteFeature",
+    "RelativePath": "api/Feature/DeleteFeature/{featureId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "featureId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.FeatureController",
+    "Method": "GetFeatures",
+    "RelativePath": "api/Feature/Get_Features",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

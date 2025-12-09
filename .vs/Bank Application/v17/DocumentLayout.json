@@ -1,0 +1,2154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\services\\ifeatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\services\\ifeatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\services\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\services\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\services\\iaccounttypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\services\\iaccounttypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\services\\featureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\services\\featureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\services\\accounttypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\services\\accounttypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\seedr\\employeeseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\seedr\\employeeseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\seedr\\accountstatusseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\seedr\\accountstatusseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\repositories\\ifeaturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\repositories\\ifeaturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\repositories\\iaccounttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\repositories\\iaccounttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\repositories\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\repositories\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\repositories\\featurerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\repositories\\featurerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\repositories\\accounttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\repositories\\accounttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\supportticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\supportticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\subaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\subaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\scheduledtransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\scheduledtransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\clientaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\clientaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\accounttypefeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\accounttypefeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\accounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\accounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\accountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\accountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\dtos\\updateaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\dtos\\updateaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\dtos\\featurecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\dtos\\featurecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\dtos\\editaccounttypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\dtos\\editaccounttypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\dtos\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\dtos\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\dtos\\accounttypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\dtos\\accounttypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\dtos\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\design pattern\\factory\\factoryaccounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\design pattern\\factory\\factoryaccounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\design pattern\\facades\\ifeaturefacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\design pattern\\facades\\ifeaturefacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\design pattern\\facades\\iclientfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\design pattern\\facades\\iclientfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\design pattern\\facades\\iaccounttypefacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\design pattern\\facades\\iaccounttypefacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\design pattern\\facades\\iaccountfacadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\design pattern\\facades\\iaccountfacadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\design pattern\\facades\\featurefacade .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\design pattern\\facades\\featurefacade .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\design pattern\\facades\\clientfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\design pattern\\facades\\clientfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\design pattern\\facades\\accounttypefacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\design pattern\\facades\\accounttypefacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\design pattern\\facades\\accountfacadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\design pattern\\facades\\accountfacadeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\controllers\\accounttypescontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\controllers\\accounttypescontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\controllers\\featurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\controllers\\featurecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251209042554_ClientAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251209042554_ClientAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\migrations\\20251208222423_feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\migrations\\20251208222423_feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208222522_AccountTypeFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208222522_AccountTypeFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208222505_AccountType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208222505_AccountType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208222404_Account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208222404_Account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210147_TransactionType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208210147_TransactionType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210136_TransactionLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208210136_TransactionLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210120_SupportTicket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208210120_SupportTicket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210103_SubAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208210103_SubAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210047_ScheduledTransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208210047_ScheduledTransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210026_Report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208210026_Report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210001_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208210001_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208205850_Client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208205850_Client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208205824_AccountStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208205824_AccountStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208094152_Client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208094152_Client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208041353_ClientAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251208041353_ClientAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222202_TransactionType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207222202_TransactionType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222151_TransactionLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207222151_TransactionLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222134_SupportTicket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207222134_SupportTicket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222116_SubAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207222116_SubAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222058_scheduledTransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207222058_scheduledTransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222034_Report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207222034_Report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222017_Feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207222017_Feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222005_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207222005_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221947_ClientAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207221947_ClientAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221936_Client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207221936_Client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221923_AccountType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207221923_AccountType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221910_AccountStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207221910_AccountStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221855_AccountFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207221855_AccountFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221723_AccountType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207221723_AccountType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\bank application.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\bank application.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\models\\transactionlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\models\\transactionlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063700_TransactionType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063700_TransactionType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063647_TransactionLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063647_TransactionLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063624_SupportTicket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063624_SupportTicket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063557_SubAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063557_SubAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063534_scheduledTransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063534_scheduledTransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063515_Report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063515_Report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063458_Feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063458_Feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063442_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063442_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063421_clientAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063421_clientAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063405_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063405_client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063350_AccountType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063350_AccountType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063330_AccountStautus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063330_AccountStautus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063315_AccountFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063315_AccountFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063256_Account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207063256_Account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207062900_Account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251207062900_Account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|c:\\users\\lenovo\\source\\repos\\bank application\\bank application\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A966C88F-2BC0-4E5D-9EDD-27C3A46F75DD}|Bank Application\\Bank Application.csproj|solutionrelative:bank application\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206205325_Account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206205325_Account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204430_TransactionLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206204430_TransactionLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204412_SupportTicket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206204412_SupportTicket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204349_SubAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206204349_SubAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204333_scheduledTransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206204333_scheduledTransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204319_Report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206204319_Report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204303_Feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206204303_Feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204246_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206204246_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204219_ClientAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206204219_ClientAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204205_Client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206204205_Client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204112_AccountStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206204112_AccountStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204050_AccountFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206204050_AccountFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206203750_Account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206203750_Account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202434_TransactionType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202434_TransactionType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202419_TransactionLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202419_TransactionLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202400_SupportTicket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202400_SupportTicket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202342_SubAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202342_SubAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202317_scheduledTransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202317_scheduledTransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202249_Report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202249_Report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202234_Feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202234_Feature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202217_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202217_Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202156_ClientAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202156_ClientAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202142_Client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202142_Client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202126_AccountType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202126_AccountType.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202112_AccountStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202112_AccountStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202055_AccountFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bank Application\\Migrations\\20251206202055_AccountFeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\IAccountService.cs",
+              "RelativeDocumentMoniker": "Bank Application\\services\\IAccountService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\IAccountService.cs",
+              "RelativeToolTip": "Bank Application\\services\\IAccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:20:31.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAccountTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\IAccountTypeService.cs",
+              "RelativeDocumentMoniker": "Bank Application\\services\\IAccountTypeService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\IAccountTypeService.cs",
+              "RelativeToolTip": "Bank Application\\services\\IAccountTypeService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T20:41:44.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IClientService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\IClientService.cs",
+              "RelativeDocumentMoniker": "Bank Application\\services\\IClientService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\IClientService.cs",
+              "RelativeToolTip": "Bank Application\\services\\IClientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T09:11:16.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IFeatureService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\IFeatureService.cs",
+              "RelativeDocumentMoniker": "Bank Application\\services\\IFeatureService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\IFeatureService.cs",
+              "RelativeToolTip": "Bank Application\\services\\IFeatureService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:23:02.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\appsettings.json",
+              "RelativeDocumentMoniker": "Bank Application\\appsettings.json",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\appsettings.json",
+              "RelativeToolTip": "Bank Application\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-06T19:53:11.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Program.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Program.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Program.cs",
+              "RelativeToolTip": "Bank Application\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:04:08.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FeatureService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\FeatureService.cs",
+              "RelativeDocumentMoniker": "Bank Application\\services\\FeatureService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\FeatureService.cs",
+              "RelativeToolTip": "Bank Application\\services\\FeatureService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:44:44.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\ClientService.cs",
+              "RelativeDocumentMoniker": "Bank Application\\services\\ClientService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\ClientService.cs",
+              "RelativeToolTip": "Bank Application\\services\\ClientService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwD4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T09:11:50.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountTypeService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\AccountTypeService.cs",
+              "RelativeDocumentMoniker": "Bank Application\\services\\AccountTypeService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\AccountTypeService.cs",
+              "RelativeToolTip": "Bank Application\\services\\AccountTypeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T21:32:33.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\AccountService.cs",
+              "RelativeDocumentMoniker": "Bank Application\\services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\services\\AccountService.cs",
+              "RelativeToolTip": "Bank Application\\services\\AccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:21:06.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\seedr\\EmployeeSeeder.cs",
+              "RelativeDocumentMoniker": "Bank Application\\seedr\\EmployeeSeeder.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\seedr\\EmployeeSeeder.cs",
+              "RelativeToolTip": "Bank Application\\seedr\\EmployeeSeeder.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwC8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T03:02:40.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccountStatusSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\seedr\\AccountStatusSeeder.cs",
+              "RelativeDocumentMoniker": "Bank Application\\seedr\\AccountStatusSeeder.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\seedr\\AccountStatusSeeder.cs",
+              "RelativeToolTip": "Bank Application\\seedr\\AccountStatusSeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T23:52:18.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IFeatureRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\IFeatureRepository.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Repositories\\IFeatureRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\IFeatureRepository.cs",
+              "RelativeToolTip": "Bank Application\\Repositories\\IFeatureRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:28:42.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IClientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\IClientRepository.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Repositories\\IClientRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\IClientRepository.cs",
+              "RelativeToolTip": "Bank Application\\Repositories\\IClientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T09:09:53.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IAccountTypeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\IAccountTypeRepository.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Repositories\\IAccountTypeRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\IAccountTypeRepository.cs",
+              "RelativeToolTip": "Bank Application\\Repositories\\IAccountTypeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T21:27:36.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IAccountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\IAccountRepository.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Repositories\\IAccountRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\IAccountRepository.cs",
+              "RelativeToolTip": "Bank Application\\Repositories\\IAccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:19:43.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FeatureRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\FeatureRepository.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Repositories\\FeatureRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\FeatureRepository.cs",
+              "RelativeToolTip": "Bank Application\\Repositories\\FeatureRepository.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAmwCQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:29:20.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Repositories\\ClientRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\ClientRepository.cs",
+              "RelativeToolTip": "Bank Application\\Repositories\\ClientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T09:10:23.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccountTypeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\AccountTypeRepository.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Repositories\\AccountTypeRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\AccountTypeRepository.cs",
+              "RelativeToolTip": "Bank Application\\Repositories\\AccountTypeRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T21:28:30.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Repositories\\AccountRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Repositories\\AccountRepository.cs",
+              "RelativeToolTip": "Bank Application\\Repositories\\AccountRepository.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAkwEoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:20:05.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\TransactionType.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\TransactionType.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\TransactionType.cs",
+              "RelativeToolTip": "Bank Application\\Models\\TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T00:59:33.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SupportTicket.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\SupportTicket.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\SupportTicket.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\SupportTicket.cs",
+              "RelativeToolTip": "Bank Application\\Models\\SupportTicket.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwBUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T06:48:23.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SubAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\SubAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\SubAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\SubAccount.cs",
+              "RelativeToolTip": "Bank Application\\Models\\SubAccount.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAiwAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:58:13.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ScheduledTransactions.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\ScheduledTransactions.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\ScheduledTransactions.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\ScheduledTransactions.cs",
+              "RelativeToolTip": "Bank Application\\Models\\ScheduledTransactions.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwBMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T00:24:13.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\Report.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\Report.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\Report.cs",
+              "RelativeToolTip": "Bank Application\\Models\\Report.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAuwAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T07:15:36.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Feature.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\Feature.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\Feature.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\Feature.cs",
+              "RelativeToolTip": "Bank Application\\Models\\Feature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:43:45.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\Employee.cs",
+              "RelativeToolTip": "Bank Application\\Models\\Employee.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwDEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T07:11:42.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\Client.cs",
+              "RelativeToolTip": "Bank Application\\Models\\Client.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAkwEAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:25:06.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ClientAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\ClientAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\ClientAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\ClientAccount.cs",
+              "RelativeToolTip": "Bank Application\\Models\\ClientAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T00:05:28.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AccountTypeFeature.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\AccountTypeFeature.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\AccountTypeFeature.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\AccountTypeFeature.cs",
+              "RelativeToolTip": "Bank Application\\Models\\AccountTypeFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:17:16.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AccountType.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\AccountType.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\AccountType.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\AccountType.cs",
+              "RelativeToolTip": "Bank Application\\Models\\AccountType.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:41:32.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AccountStatus.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\AccountStatus.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\AccountStatus.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\AccountStatus.cs",
+              "RelativeToolTip": "Bank Application\\Models\\AccountStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T23:39:50.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\Account.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\Account.cs",
+              "RelativeToolTip": "Bank Application\\Models\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:47:55.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UpdateAccountDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\UpdateAccountDto.cs",
+              "RelativeDocumentMoniker": "Bank Application\\DTOs\\UpdateAccountDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\UpdateAccountDto.cs",
+              "RelativeToolTip": "Bank Application\\DTOs\\UpdateAccountDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T04:33:00.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Bank Application\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "Bank Application\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T02:52:53.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "FeatureCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\FeatureCreateDto.cs",
+              "RelativeDocumentMoniker": "Bank Application\\DTOs\\FeatureCreateDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\FeatureCreateDto.cs",
+              "RelativeToolTip": "Bank Application\\DTOs\\FeatureCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:40:36.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EditAccountTypeDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\EditAccountTypeDto.cs",
+              "RelativeDocumentMoniker": "Bank Application\\DTOs\\EditAccountTypeDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\EditAccountTypeDto.cs",
+              "RelativeToolTip": "Bank Application\\DTOs\\EditAccountTypeDto.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T00:43:22.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ClientDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\ClientDto.cs",
+              "RelativeDocumentMoniker": "Bank Application\\DTOs\\ClientDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\ClientDto.cs",
+              "RelativeToolTip": "Bank Application\\DTOs\\ClientDto.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA0wD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T08:12:29.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AccountTypeDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\AccountTypeDto.cs",
+              "RelativeDocumentMoniker": "Bank Application\\DTOs\\AccountTypeDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\AccountTypeDto.cs",
+              "RelativeToolTip": "Bank Application\\DTOs\\AccountTypeDto.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T21:33:52.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AccountDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\AccountDto.cs",
+              "RelativeDocumentMoniker": "Bank Application\\DTOs\\AccountDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\DTOs\\AccountDto.cs",
+              "RelativeToolTip": "Bank Application\\DTOs\\AccountDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T23:33:35.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "factoryAccountType.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Factory\\factoryAccountType.cs",
+              "RelativeDocumentMoniker": "Bank Application\\design pattern\\Factory\\factoryAccountType.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Factory\\factoryAccountType.cs",
+              "RelativeToolTip": "Bank Application\\design pattern\\Factory\\factoryAccountType.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T09:21:55.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IFeatureFacade.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\IFeatureFacade.cs",
+              "RelativeDocumentMoniker": "Bank Application\\design pattern\\Facades\\IFeatureFacade.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\IFeatureFacade.cs",
+              "RelativeToolTip": "Bank Application\\design pattern\\Facades\\IFeatureFacade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T09:21:50.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IClientFacade.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\IClientFacade.cs",
+              "RelativeDocumentMoniker": "Bank Application\\design pattern\\Facades\\IClientFacade.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\IClientFacade.cs",
+              "RelativeToolTip": "Bank Application\\design pattern\\Facades\\IClientFacade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T09:21:48.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IAccountTypeFacade.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\IAccountTypeFacade.cs",
+              "RelativeDocumentMoniker": "Bank Application\\design pattern\\Facades\\IAccountTypeFacade.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\IAccountTypeFacade.cs",
+              "RelativeToolTip": "Bank Application\\design pattern\\Facades\\IAccountTypeFacade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T09:21:46.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IAccountFacadeService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\IAccountFacadeService.cs",
+              "RelativeDocumentMoniker": "Bank Application\\design pattern\\Facades\\IAccountFacadeService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\IAccountFacadeService.cs",
+              "RelativeToolTip": "Bank Application\\design pattern\\Facades\\IAccountFacadeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T09:21:44.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "FeatureFacade .cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\FeatureFacade .cs",
+              "RelativeDocumentMoniker": "Bank Application\\design pattern\\Facades\\FeatureFacade .cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\FeatureFacade .cs",
+              "RelativeToolTip": "Bank Application\\design pattern\\Facades\\FeatureFacade .cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T09:21:40.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ClientFacade.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\ClientFacade.cs",
+              "RelativeDocumentMoniker": "Bank Application\\design pattern\\Facades\\ClientFacade.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\ClientFacade.cs",
+              "RelativeToolTip": "Bank Application\\design pattern\\Facades\\ClientFacade.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T09:21:38.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AccountTypeFacade.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\AccountTypeFacade.cs",
+              "RelativeDocumentMoniker": "Bank Application\\design pattern\\Facades\\AccountTypeFacade.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\AccountTypeFacade.cs",
+              "RelativeToolTip": "Bank Application\\design pattern\\Facades\\AccountTypeFacade.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T09:21:35.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "AccountFacadeService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\AccountFacadeService.cs",
+              "RelativeDocumentMoniker": "Bank Application\\design pattern\\Facades\\AccountFacadeService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\design pattern\\Facades\\AccountFacadeService.cs",
+              "RelativeToolTip": "Bank Application\\design pattern\\Facades\\AccountFacadeService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T09:21:22.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Bank Application\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T07:19:29.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "FeatureController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Controllers\\FeatureController.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Controllers\\FeatureController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Controllers\\FeatureController.cs",
+              "RelativeToolTip": "Bank Application\\Controllers\\FeatureController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAcwC4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T23:24:21.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "Bank Application\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T08:34:04.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AccountTypesController .cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Controllers\\AccountTypesController .cs",
+              "RelativeDocumentMoniker": "Bank Application\\Controllers\\AccountTypesController .cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Controllers\\AccountTypesController .cs",
+              "RelativeToolTip": "Bank Application\\Controllers\\AccountTypesController .cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAASwFEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T21:34:33.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Bank Application\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAACAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:23:22.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "20251209042554_ClientAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251209042554_ClientAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251209042554_ClientAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251209042554_ClientAccount.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251209042554_ClientAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T04:25:55.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "20251208222423_Feature.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208222423_Feature.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208222423_Feature.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208222423_Feature.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208222423_Feature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:24:24.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "20251208222522_AccountTypeFeature.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208222522_AccountTypeFeature.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208222522_AccountTypeFeature.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208222522_AccountTypeFeature.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208222522_AccountTypeFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:25:22.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "20251208222505_AccountType.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208222505_AccountType.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208222505_AccountType.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208222505_AccountType.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208222505_AccountType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:25:06.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "20251208222404_Account.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208222404_Account.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208222404_Account.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208222404_Account.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208222404_Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T22:24:05.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "20251208210147_TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210147_TransactionType.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208210147_TransactionType.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210147_TransactionType.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208210147_TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T21:01:47.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "20251208210136_TransactionLog.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210136_TransactionLog.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208210136_TransactionLog.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210136_TransactionLog.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208210136_TransactionLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T21:01:36.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "20251208210120_SupportTicket.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210120_SupportTicket.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208210120_SupportTicket.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210120_SupportTicket.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208210120_SupportTicket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T21:01:20.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "20251208210103_SubAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210103_SubAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208210103_SubAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210103_SubAccount.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208210103_SubAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T21:01:03.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "20251208210047_ScheduledTransactions.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210047_ScheduledTransactions.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208210047_ScheduledTransactions.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210047_ScheduledTransactions.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208210047_ScheduledTransactions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T21:00:47.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "20251208210026_Report.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210026_Report.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208210026_Report.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210026_Report.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208210026_Report.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T21:00:26.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20251208210001_Employee.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210001_Employee.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208210001_Employee.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208210001_Employee.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208210001_Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T21:00:01.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "20251208205850_Client.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208205850_Client.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208205850_Client.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208205850_Client.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208205850_Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T20:58:51.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "20251208205824_AccountStatus.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208205824_AccountStatus.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208205824_AccountStatus.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208205824_AccountStatus.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208205824_AccountStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T20:58:24.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "20251208094152_Client.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208094152_Client.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208094152_Client.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208094152_Client.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208094152_Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T09:41:52.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "20251208041353_ClientAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208041353_ClientAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251208041353_ClientAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251208041353_ClientAccount.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251208041353_ClientAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T04:13:53.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAAMTAAAAAAAAAAAAwBUTAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-12-08T03:12:47.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20251207222134_SupportTicket.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222134_SupportTicket.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207222134_SupportTicket.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222134_SupportTicket.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207222134_SupportTicket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:21:34.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "20251207222151_TransactionLog.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222151_TransactionLog.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207222151_TransactionLog.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222151_TransactionLog.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207222151_TransactionLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:21:51.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "20251207222202_TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222202_TransactionType.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207222202_TransactionType.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222202_TransactionType.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207222202_TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:22:02.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20251207222116_SubAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222116_SubAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207222116_SubAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222116_SubAccount.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207222116_SubAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:21:16.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "20251207222058_scheduledTransactions.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222058_scheduledTransactions.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207222058_scheduledTransactions.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222058_scheduledTransactions.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207222058_scheduledTransactions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:20:58.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "20251207222034_Report.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222034_Report.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207222034_Report.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222034_Report.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207222034_Report.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:20:34.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "20251207222017_Feature.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222017_Feature.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207222017_Feature.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222017_Feature.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207222017_Feature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:20:17.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "20251207222005_Employee.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222005_Employee.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207222005_Employee.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207222005_Employee.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207222005_Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:20:05.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "20251207221947_ClientAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221947_ClientAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207221947_ClientAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221947_ClientAccount.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207221947_ClientAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:19:47.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "20251207221936_Client.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221936_Client.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207221936_Client.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221936_Client.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207221936_Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:19:36.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "20251207221923_AccountType.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221923_AccountType.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207221923_AccountType.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221923_AccountType.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207221923_AccountType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:19:23.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "20251207221910_AccountStatus.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221910_AccountStatus.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207221910_AccountStatus.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221910_AccountStatus.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207221910_AccountStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:19:11.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "20251207221855_AccountFeature.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221855_AccountFeature.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207221855_AccountFeature.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221855_AccountFeature.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207221855_AccountFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:18:55.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "20251207221723_AccountType.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221723_AccountType.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207221723_AccountType.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207221723_AccountType.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207221723_AccountType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T22:17:23.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "Bank Application",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Bank Application.csproj",
+              "RelativeDocumentMoniker": "Bank Application\\Bank Application.csproj",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Bank Application.csproj",
+              "RelativeToolTip": "Bank Application\\Bank Application.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-07T21:29:18.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "TransactionLog.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\TransactionLog.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Models\\TransactionLog.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Models\\TransactionLog.cs",
+              "RelativeToolTip": "Bank Application\\Models\\TransactionLog.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T06:13:15.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "20251207063700_TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063700_TransactionType.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063700_TransactionType.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063700_TransactionType.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063700_TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:37:01.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "20251207063624_SupportTicket.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063624_SupportTicket.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063624_SupportTicket.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063624_SupportTicket.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063624_SupportTicket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:36:24.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "20251207063647_TransactionLog.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063647_TransactionLog.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063647_TransactionLog.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063647_TransactionLog.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063647_TransactionLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:36:47.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "20251207063557_SubAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063557_SubAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063557_SubAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063557_SubAccount.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063557_SubAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:35:57.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "20251207063534_scheduledTransactions.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063534_scheduledTransactions.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063534_scheduledTransactions.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063534_scheduledTransactions.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063534_scheduledTransactions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:35:34.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "20251207063515_Report.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063515_Report.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063515_Report.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063515_Report.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063515_Report.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:35:15.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "20251207063458_Feature.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063458_Feature.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063458_Feature.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063458_Feature.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063458_Feature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:34:58.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "20251207063442_Employee.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063442_Employee.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063442_Employee.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063442_Employee.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063442_Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:34:43.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "20251207063421_clientAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063421_clientAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063421_clientAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063421_clientAccount.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063421_clientAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:34:21.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "20251207063405_client.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063405_client.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063405_client.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063405_client.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063405_client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:34:05.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "20251207063350_AccountType.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063350_AccountType.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063350_AccountType.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063350_AccountType.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063350_AccountType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:33:50.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "20251207063330_AccountStautus.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063330_AccountStautus.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063330_AccountStautus.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063330_AccountStautus.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063330_AccountStautus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:33:31.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "20251207063315_AccountFeature.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063315_AccountFeature.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063315_AccountFeature.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063315_AccountFeature.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063315_AccountFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:33:15.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "20251207063256_Account.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063256_Account.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207063256_Account.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207063256_Account.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207063256_Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:32:57.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "20251207062900_Account.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207062900_Account.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251207062900_Account.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251207062900_Account.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251207062900_Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:29:01.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Bank Application\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Bank Application\\Properties\\launchSettings.json",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-06T22:26:08.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "20251206205325_Account.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206205325_Account.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206205325_Account.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206205325_Account.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206205325_Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:53:26.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "20251206204430_TransactionLog.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204430_TransactionLog.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206204430_TransactionLog.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204430_TransactionLog.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206204430_TransactionLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:44:30.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "20251206204412_SupportTicket.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204412_SupportTicket.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206204412_SupportTicket.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204412_SupportTicket.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206204412_SupportTicket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:44:12.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "20251206204349_SubAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204349_SubAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206204349_SubAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204349_SubAccount.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206204349_SubAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:43:50.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "20251206204333_scheduledTransactions.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204333_scheduledTransactions.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206204333_scheduledTransactions.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204333_scheduledTransactions.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206204333_scheduledTransactions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:43:33.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "20251206204319_Report.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204319_Report.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206204319_Report.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204319_Report.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206204319_Report.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:43:19.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 109,
+              "Title": "20251206204303_Feature.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204303_Feature.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206204303_Feature.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204303_Feature.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206204303_Feature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:43:04.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 110,
+              "Title": "20251206204246_Employee.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204246_Employee.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206204246_Employee.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204246_Employee.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206204246_Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:42:46.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 111,
+              "Title": "20251206204219_ClientAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204219_ClientAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206204219_ClientAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204219_ClientAccount.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206204219_ClientAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:42:19.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 112,
+              "Title": "20251206204205_Client.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204205_Client.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206204205_Client.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204205_Client.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206204205_Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:42:05.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 113,
+              "Title": "20251206204112_AccountStatus.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204112_AccountStatus.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206204112_AccountStatus.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204112_AccountStatus.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206204112_AccountStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:41:12.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 114,
+              "Title": "20251206204050_AccountFeature.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204050_AccountFeature.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206204050_AccountFeature.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206204050_AccountFeature.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206204050_AccountFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:40:51.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 115,
+              "Title": "20251206203750_Account.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206203750_Account.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206203750_Account.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206203750_Account.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206203750_Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:37:50.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 116,
+              "Title": "20251206202434_TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202434_TransactionType.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202434_TransactionType.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202434_TransactionType.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202434_TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:24:34.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 117,
+              "Title": "20251206202419_TransactionLog.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202419_TransactionLog.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202419_TransactionLog.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202419_TransactionLog.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202419_TransactionLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:24:19.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 118,
+              "Title": "20251206202400_SupportTicket.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202400_SupportTicket.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202400_SupportTicket.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202400_SupportTicket.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202400_SupportTicket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:24:00.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 119,
+              "Title": "20251206202342_SubAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202342_SubAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202342_SubAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202342_SubAccount.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202342_SubAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:23:42.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 120,
+              "Title": "20251206202317_scheduledTransactions.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202317_scheduledTransactions.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202317_scheduledTransactions.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202317_scheduledTransactions.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202317_scheduledTransactions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:23:18.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 121,
+              "Title": "20251206202249_Report.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202249_Report.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202249_Report.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202249_Report.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202249_Report.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:22:49.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 122,
+              "Title": "20251206202234_Feature.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202234_Feature.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202234_Feature.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202234_Feature.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202234_Feature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:22:35.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 123,
+              "Title": "20251206202217_Employee.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202217_Employee.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202217_Employee.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202217_Employee.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202217_Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:22:17.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 124,
+              "Title": "20251206202156_ClientAccount.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202156_ClientAccount.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202156_ClientAccount.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202156_ClientAccount.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202156_ClientAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:21:57.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 125,
+              "Title": "20251206202142_Client.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202142_Client.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202142_Client.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202142_Client.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202142_Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:21:42.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 126,
+              "Title": "20251206202126_AccountType.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202126_AccountType.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202126_AccountType.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202126_AccountType.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202126_AccountType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:21:26.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 127,
+              "Title": "20251206202112_AccountStatus.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202112_AccountStatus.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202112_AccountStatus.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202112_AccountStatus.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202112_AccountStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:21:12.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 128,
+              "Title": "20251206202055_AccountFeature.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202055_AccountFeature.cs",
+              "RelativeDocumentMoniker": "Bank Application\\Migrations\\20251206202055_AccountFeature.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Bank Application\\Bank Application\\Migrations\\20251206202055_AccountFeature.cs",
+              "RelativeToolTip": "Bank Application\\Migrations\\20251206202055_AccountFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T20:20:56.055Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
