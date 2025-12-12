@@ -1,5 +1,6 @@
 using Bank_Application.Data;
 using Bank_Application.DesignPatterns;
+using Bank_Application.DesignPatterns.Decorator;
 using Bank_Application.Facade;
 using Bank_Application.Factories;
 using Bank_Application.Models;
@@ -29,11 +30,22 @@ builder.Services.AddScoped<IClientRepository, ClientRepository>();
 builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<IClientFacade, ClientFacade>();
 builder.Services.AddScoped<IFeatureRepository, FeatureRepository>();
-builder.Services.AddScoped<IFeatureService, FeatureService>();
-builder.Services.AddScoped<IFeatureFacade, FeatureFacade>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IAccountFacadeService, AccountFacadeService>();
+builder.Services.AddScoped<ISubAccountRepository, SubAccountRepository>();
+builder.Services.AddScoped<ISubAccountService, SubAccountService>();
+builder.Services.AddScoped<IAccountHierarchyService, AccountHierarchyService>();
+builder.Services.AddScoped<FeatureService>();
+
+builder.Services.AddScoped<IFeatureDecorator>(sp =>
+{
+    var service = sp.GetRequiredService<FeatureService>();
+    var logger = sp.GetRequiredService<ILogger<FeatureLoggingDecorator>>();
+
+    return new FeatureLoggingDecorator(service, logger);
+});
+
 
 
 builder.Services.AddControllers()

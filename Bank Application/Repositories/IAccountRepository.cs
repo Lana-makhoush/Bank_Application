@@ -16,5 +16,6 @@ namespace Bank_Application.Repositories
 
         Task<ClientAccount?> GetClientAccountById(int clientAccountId);
         Task<List<ClientAccount>> GetAllClientAccounts();
+        Task<Account?> GetAccountByIdAsync(int accountId);
     }
 }

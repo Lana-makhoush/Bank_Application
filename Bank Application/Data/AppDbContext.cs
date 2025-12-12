@@ -27,6 +27,22 @@ namespace Bank_Application.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+//كل حساب فرعي له حالة
+
+            modelBuilder.Entity<SubAccount>()
+       .HasOne(s => s.SubAccountStatus)
+       .WithMany(status => status.SubAccounts)
+       .HasForeignKey(s => s.SubAccountStatusId)
+       .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<SubAccount>()
+               .HasOne(s => s.SubAccountType)
+               .WithMany(t => t.SubAccounts)
+               .HasForeignKey(s => s.SubAccountTypeId)
+               .OnDelete(DeleteBehavior.Restrict);
+
+
+
             //الميزة تابعة لاكثر من النوع والنوع له اكثر من ميزة
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<AccountTypeFeature>()

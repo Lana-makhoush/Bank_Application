@@ -14,5 +14,7 @@ namespace Bank_Application.Models
             ErrorMessage = "اسم الحالة يجب أن يحتوي على أحرف عربية أو إنجليزية فقط")]
         public string? StatusName { get; set; } = string.Empty;
         public ICollection<Account>? Accounts { get; set; }
+        public ICollection<SubAccount>? SubAccounts { get; set; }
+
     }
 }

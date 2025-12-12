@@ -360,5 +360,170 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.SubAccountController",
+    "Method": "Create",
+    "RelativePath": "api/SubAccount/{accountId}/{statusId}/Add_Sub_Account",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "statusId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ParentAccountId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DailyWithdrawalLimit",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TransferLimit",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UsageAreas",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserPermissions",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Balance",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.SubAccountController",
+    "Method": "GetAccountHierarchy",
+    "RelativePath": "api/SubAccount/{accountId}/hierarchy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.SubAccountController",
+    "Method": "Update",
+    "RelativePath": "api/SubAccount/{subAccountId}/{statusId}/Update_Sub_Account",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subAccountId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "statusId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "DailyWithdrawalLimit",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TransferLimit",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UsageAreas",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserPermissions",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Balance",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.SubAccountController",
+    "Method": "Delete",
+    "RelativePath": "api/SubAccount/Delete_sub_Account/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.SubAccountController",
+    "Method": "GetAll",
+    "RelativePath": "api/SubAccount/Get_All_Sub_Accounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.SubAccountController",
+    "Method": "GetSubAccountById",
+    "RelativePath": "api/SubAccount/Get_Sub_Account/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

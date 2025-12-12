@@ -28,5 +28,14 @@ namespace Bank_Application.Models
         [RegularExpression(@"^[\u0621-\u064A a-zA-Z\s,.-]*$",
             ErrorMessage = "صلاحيات المستخدم يجب أن تحتوي على أحرف عربية أو إنجليزية فقط")]
         public string? UserPermissions { get; set; } = string.Empty;
+        public decimal? Balance { get; set; }
+        [Required(ErrorMessage = "تاريخ الإنشاء مطلوب")]
+        public DateTime? CreatedAt { get; set; } = DateTime.Now;
+        public int? SubAccountStatusId { get; set; }     
+
+        public AccountStatus? SubAccountStatus { get; set; }
+        public int? SubAccountTypeId { get; set; }
+        public AccountType? SubAccountType { get; set; }
+
     }
 }

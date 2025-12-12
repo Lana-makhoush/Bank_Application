@@ -96,5 +96,13 @@ namespace Bank_Application.Repositories
                     .ThenInclude(a => a.AccountType)
                 .ToListAsync();
         }
+        public async Task<Account?> GetAccountByIdAsync(int accountId)
+        {
+            return await _context.Accounts
+                .Include(a => a.AccountType)
+                .Include(a => a.AccountStatus)
+                .Include(a => a.SubAccounts)
+                .FirstOrDefaultAsync(a => a.AccountId == accountId);
+        }
     }
 }

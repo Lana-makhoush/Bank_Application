@@ -623,6 +623,279 @@
           }
         }
       }
+    },
+    "/api/SubAccount/{accountId}/{statusId}/Add_Sub_Account": {
+      "post": {
+        "tags": [
+          "SubAccount"
+        ],
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "statusId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "Balance",
+                  "CreatedAt",
+                  "DailyWithdrawalLimit",
+                  "TransferLimit",
+                  "UsageAreas",
+                  "UserPermissions"
+                ],
+                "type": "object",
+                "properties": {
+                  "ParentAccountId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "DailyWithdrawalLimit": {
+                    "minimum": 0,
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "TransferLimit": {
+                    "minimum": 0,
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "UsageAreas": {
+                    "pattern": "^[\\u0621-\\u064A a-zA-Z\\s]+$",
+                    "type": "string"
+                  },
+                  "UserPermissions": {
+                    "pattern": "^[\\u0621-\\u064A a-zA-Z\\s]+$",
+                    "type": "string"
+                  },
+                  "Balance": {
+                    "minimum": 0,
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "CreatedAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                }
+              },
+              "encoding": {
+                "ParentAccountId": {
+                  "style": "form"
+                },
+                "DailyWithdrawalLimit": {
+                  "style": "form"
+                },
+                "TransferLimit": {
+                  "style": "form"
+                },
+                "UsageAreas": {
+                  "style": "form"
+                },
+                "UserPermissions": {
+                  "style": "form"
+                },
+                "Balance": {
+                  "style": "form"
+                },
+                "CreatedAt": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubAccount/{subAccountId}/{statusId}/Update_Sub_Account": {
+      "put": {
+        "tags": [
+          "SubAccount"
+        ],
+        "parameters": [
+          {
+            "name": "subAccountId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "statusId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "DailyWithdrawalLimit": {
+                    "minimum": 0,
+                    "type": "string"
+                  },
+                  "TransferLimit": {
+                    "minimum": 0,
+                    "type": "string"
+                  },
+                  "UsageAreas": {
+                    "pattern": "^[\\u0621-\\u064A a-zA-Z\\s]+$",
+                    "type": "string"
+                  },
+                  "UserPermissions": {
+                    "pattern": "^[\\u0621-\\u064A a-zA-Z\\s]+$",
+                    "type": "string"
+                  },
+                  "Balance": {
+                    "minimum": 0,
+                    "type": "string"
+                  },
+                  "CreatedAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                }
+              },
+              "encoding": {
+                "DailyWithdrawalLimit": {
+                  "style": "form"
+                },
+                "TransferLimit": {
+                  "style": "form"
+                },
+                "UsageAreas": {
+                  "style": "form"
+                },
+                "UserPermissions": {
+                  "style": "form"
+                },
+                "Balance": {
+                  "style": "form"
+                },
+                "CreatedAt": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubAccount/Delete_sub_Account/{id}": {
+      "delete": {
+        "tags": [
+          "SubAccount"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubAccount/Get_Sub_Account/{id}": {
+      "get": {
+        "tags": [
+          "SubAccount"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubAccount/Get_All_Sub_Accounts": {
+      "get": {
+        "tags": [
+          "SubAccount"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SubAccount/{accountId}/hierarchy": {
+      "get": {
+        "tags": [
+          "SubAccount"
+        ],
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": { }

@@ -32,6 +32,8 @@ namespace Bank_Application.Models
         public string? TermsAndConditions { get; set; } = string.Empty;
         public ICollection<Account>? Accounts { get; set; }
         public ICollection<AccountTypeFeature>? AccountTypeFeatures { get; set; }
+        public ICollection<SubAccount> SubAccounts { get; set; }
+
 
     }
 }

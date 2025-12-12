@@ -1,4 +1,5 @@
 ﻿using Bank_Application.DesignPatterns;
+using Bank_Application.DesignPatterns.Decorator;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bank_Application.Controllers
@@ -7,17 +8,17 @@ namespace Bank_Application.Controllers
     [ApiController]
     public class FeatureController : ControllerBase
     {
-        private readonly IFeatureFacade _featureFacade;
+        private readonly IFeatureDecorator _featuredecor;
 
-        public FeatureController(IFeatureFacade featureFacade)
+        public FeatureController(IFeatureDecorator featuredecorator)
         {
-            _featureFacade = featureFacade;
+            _featuredecor = featuredecorator;
         }
 
         [HttpGet("Get_Features")]
         public async Task<IActionResult> GetFeatures()
         {
-            var features = await _featureFacade.ListAllFeatures();
+            var features = await _featuredecor.ListAllFeatures();
             return Ok(features);
         }
 
@@ -27,7 +28,7 @@ namespace Bank_Application.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState); 
 
-            var feature = await _featureFacade.CreateFeature(dto.Name, dto.Description);
+            var feature = await _featuredecor.CreateFeature(dto.Name, dto.Description);
 
             var result = new
             {
@@ -46,7 +47,7 @@ namespace Bank_Application.Controllers
         [HttpDelete("DeleteFeature/{featureId:int}")]
         public async Task<IActionResult> DeleteFeature(int featureId)
         {
-            var result = await _featureFacade.RemoveFeature(featureId);
+            var result = await _featuredecor.RemoveFeature(featureId);
 
             if (!result)
             {
@@ -67,7 +68,7 @@ namespace Bank_Application.Controllers
         [HttpPost("assign-Feature-to-AccountType/{featureId:int}/{accountTypeId:int}")]
         public async Task<IActionResult> AssignFeature(int featureId, int accountTypeId)
         {
-            var result = await _featureFacade.LinkFeatureToAccountType(featureId, accountTypeId);
+            var result = await _featuredecor.LinkFeatureToAccountType(featureId, accountTypeId);
 
             if (!result)
             {
@@ -92,7 +93,7 @@ namespace Bank_Application.Controllers
         [HttpGet("by-account-type/{accountTypeId}")]
         public async Task<IActionResult> GetFeaturesByAccountType(int accountTypeId)
         {
-            var features = await _featureFacade.ListFeaturesOfAccountType(accountTypeId);
+            var features = await _featuredecor.ListFeaturesOfAccountType(accountTypeId);
             return Ok(features);
         }
     }
