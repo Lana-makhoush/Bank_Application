@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bank_Application.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251208222522_AccountTypeFeature")]
-    partial class AccountTypeFeature
+    [Migration("20251212163253__Initial")]
+    partial class _Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -128,53 +128,55 @@ namespace Bank_Application.Migrations
 
             modelBuilder.Entity("Bank_Application.Models.Client", b =>
                 {
-                    b.Property<int?>("ClientId")
+                    b.Property<int>("ClientId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("ClientId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClientId"));
 
                     b.Property<string>("AccountPurpose")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("IdentityImagePath")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("IdentityNumber")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("IncomeSource")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsVerified")
+                        .HasColumnType("bit");
+
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MiddleName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal?>("MonthlyIncome")
-                        .IsRequired()
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("OtpCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("OtpExpiry")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Password")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Username")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ClientId");
@@ -197,6 +199,9 @@ namespace Bank_Application.Migrations
                         .IsRequired()
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
                     b.HasKey("ClientId", "AccountId");
 
                     b.HasIndex("AccountId");
@@ -215,6 +220,9 @@ namespace Bank_Application.Migrations
                     b.Property<DateTime?>("CreatedAt")
                         .IsRequired()
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -356,10 +364,23 @@ namespace Bank_Application.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("SubAccountId"));
 
+                    b.Property<decimal?>("Balance")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .IsRequired()
+                        .HasColumnType("datetime2");
+
                     b.Property<decimal?>("DailyWithdrawalLimit")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int?>("ParentAccountId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SubAccountStatusId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SubAccountTypeId")
                         .HasColumnType("int");
 
                     b.Property<decimal?>("TransferLimit")
@@ -376,6 +397,10 @@ namespace Bank_Application.Migrations
                     b.HasKey("SubAccountId");
 
                     b.HasIndex("ParentAccountId");
+
+                    b.HasIndex("SubAccountStatusId");
+
+                    b.HasIndex("SubAccountTypeId");
 
                     b.ToTable("SubAccounts");
                 });
@@ -557,7 +582,21 @@ namespace Bank_Application.Migrations
                         .WithMany()
                         .HasForeignKey("ParentAccountId");
 
+                    b.HasOne("Bank_Application.Models.AccountStatus", "SubAccountStatus")
+                        .WithMany("SubAccounts")
+                        .HasForeignKey("SubAccountStatusId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("Bank_Application.Models.AccountType", "SubAccountType")
+                        .WithMany("SubAccounts")
+                        .HasForeignKey("SubAccountTypeId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.Navigation("ParentAccount");
+
+                    b.Navigation("SubAccountStatus");
+
+                    b.Navigation("SubAccountType");
                 });
 
             modelBuilder.Entity("Bank_Application.Models.SupportTicket", b =>
@@ -608,6 +647,8 @@ namespace Bank_Application.Migrations
             modelBuilder.Entity("Bank_Application.Models.AccountStatus", b =>
                 {
                     b.Navigation("Accounts");
+
+                    b.Navigation("SubAccounts");
                 });
 
             modelBuilder.Entity("Bank_Application.Models.AccountType", b =>
@@ -615,6 +656,8 @@ namespace Bank_Application.Migrations
                     b.Navigation("AccountTypeFeatures");
 
                     b.Navigation("Accounts");
+
+                    b.Navigation("SubAccounts");
                 });
 
             modelBuilder.Entity("Bank_Application.Models.Client", b =>
