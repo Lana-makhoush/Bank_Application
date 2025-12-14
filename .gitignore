@@ -1,13 +1,23 @@
+# Build Folders
+bin/
+obj/
+
 # Visual Studio
-.vs
-.user
-.suo
-.cache
+.vs/
+*.user
+*.suo
 
-# Build output
-bin
-obj
+# Rider IDE
+.idea/
 
-# Others
-.log
+# Publish output
+publish/
+
+# Logs
+*.log
+
+# OS Files
 .DS_Store
+
+# Secrets
+*.env
