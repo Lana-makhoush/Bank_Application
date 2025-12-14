@@ -5,6 +5,7 @@ namespace Bank_Application.DTOs
 {
     public class ClientDto
     {
+//
         [Required(ErrorMessage = "حقل الاسم الأول إجباري")]
         [RegularExpression(@"^[a-zA-Z\u0600-\u06FF\s]+$",
              ErrorMessage = "الاسم الأول يجب أن يحتوي على أحرف عربية أو إنكليزية فقط")]

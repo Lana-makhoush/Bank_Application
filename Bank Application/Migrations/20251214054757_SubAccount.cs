@@ -8,6 +8,7 @@ namespace Bank_Application.Migrations
     public partial class SubAccount : Migration
     {
         /// <inheritdoc />
+        /// //
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<int>(

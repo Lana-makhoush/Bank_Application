@@ -2,6 +2,7 @@
 
 public interface ISubAccountRepository
 {
+    //
     Task<SubAccount> CreateAsync(SubAccount subAccount);
     Task<SubAccount?> UpdateAsync(SubAccount subAccount);
     Task<bool> DeleteAsync(int subAccountId);
