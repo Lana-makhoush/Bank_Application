@@ -164,6 +164,190 @@
         }
       }
     },
+    "/api/AccountState/close/client/{id}": {
+      "post": {
+        "tags": [
+          "AccountState"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AccountState/activate/client/{id}": {
+      "post": {
+        "tags": [
+          "AccountState"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AccountState/close/sub/{id}": {
+      "post": {
+        "tags": [
+          "AccountState"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AccountState/activate/sub/{id}": {
+      "post": {
+        "tags": [
+          "AccountState"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AccountState/suspend/client/{id}": {
+      "post": {
+        "tags": [
+          "AccountState"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AccountState/freeze/client/{id}": {
+      "post": {
+        "tags": [
+          "AccountState"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AccountState/suspend/sub/{id}": {
+      "post": {
+        "tags": [
+          "AccountState"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AccountState/freeze/sub/{id}": {
+      "post": {
+        "tags": [
+          "AccountState"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/AccountType/add": {
       "post": {
         "tags": [
@@ -442,6 +626,9 @@
                   "Password": {
                     "minLength": 6,
                     "type": "string"
+                  },
+                  "Email": {
+                    "type": "string"
                   }
                 }
               },
@@ -480,6 +667,9 @@
                   "style": "form"
                 },
                 "Password": {
+                  "style": "form"
+                },
+                "Email": {
                   "style": "form"
                 }
               }

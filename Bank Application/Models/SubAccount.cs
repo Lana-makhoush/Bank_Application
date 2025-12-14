@@ -36,6 +36,9 @@ namespace Bank_Application.Models
         public AccountStatus? SubAccountStatus { get; set; }
         public int? SubAccountTypeId { get; set; }
         public AccountType? SubAccountType { get; set; }
+        public ICollection<ScheduledTransaction> ScheduledTransactions { get; set; }
+            = new List<ScheduledTransaction>();
+
 
     }
 }

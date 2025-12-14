@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bank_Application.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251211231404_SubAccount")]
+    [Migration("20251214054757_SubAccount")]
     partial class SubAccount
     {
         /// <inheritdoc />
@@ -350,9 +350,14 @@ namespace Bank_Application.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("SubAccountId")
+                        .HasColumnType("int");
+
                     b.HasKey("ScheduledTransactionId");
 
                     b.HasIndex("AccountId");
+
+                    b.HasIndex("SubAccountId");
 
                     b.ToTable("ScheduledTransactions");
                 });
@@ -574,6 +579,10 @@ namespace Bank_Application.Migrations
                         .HasForeignKey("AccountId")
                         .OnDelete(DeleteBehavior.Cascade);
 
+                    b.HasOne("Bank_Application.Models.SubAccount", null)
+                        .WithMany("ScheduledTransactions")
+                        .HasForeignKey("SubAccountId");
+
                     b.Navigation("Account");
                 });
 
@@ -676,6 +685,11 @@ namespace Bank_Application.Migrations
             modelBuilder.Entity("Bank_Application.Models.Feature", b =>
                 {
                     b.Navigation("AccountTypeFeatures");
+                });
+
+            modelBuilder.Entity("Bank_Application.Models.SubAccount", b =>
+                {
+                    b.Navigation("ScheduledTransactions");
                 });
 
             modelBuilder.Entity("Bank_Application.Models.TransactionType", b =>

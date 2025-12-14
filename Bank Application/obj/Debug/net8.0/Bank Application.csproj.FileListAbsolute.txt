@@ -8,6 +8,7 @@ C:\Users\LENOVO\source\repos\Bank Application\Bank Application\bin\Debug\net8.0\
 C:\Users\LENOVO\source\repos\Bank Application\Bank Application\bin\Debug\net8.0\Bank Application.pdb
 C:\Users\LENOVO\source\repos\Bank Application\Bank Application\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\LENOVO\source\repos\Bank Application\Bank Application\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\LENOVO\source\repos\Bank Application\Bank Application\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\LENOVO\source\repos\Bank Application\Bank Application\bin\Debug\net8.0\Humanizer.dll
 C:\Users\LENOVO\source\repos\Bank Application\Bank Application\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\LENOVO\source\repos\Bank Application\Bank Application\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll

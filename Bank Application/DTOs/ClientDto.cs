@@ -59,5 +59,6 @@ namespace Bank_Application.DTOs
 
         [MinLength(6, ErrorMessage = "الحد الأدنى لطول كلمة المرور هو 6 أحرف")]
         public string? Password { get; set; }
+        public string? Email { get; set; }
     }
 }

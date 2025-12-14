@@ -4,6 +4,7 @@ using Bank_Application.Repositories;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using BCrypt.Net;
 
 namespace Bank_Application.Services
 {
@@ -42,7 +43,9 @@ namespace Bank_Application.Services
                 AccountPurpose = dto.AccountPurpose,
                 Phone = dto.Phone,
                 Username = dto.Username,
-                Password = HashPassword(dto.Password)
+                Password = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                Email = dto.Email,
+
             };
 
             if (dto.IdentityImage != null)

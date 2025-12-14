@@ -88,6 +88,134 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Bank_Application.Controllers.AccountStateController",
+    "Method": "ActivateClientAccount",
+    "RelativePath": "api/AccountState/activate/client/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountStateController",
+    "Method": "ActivateSubAccount",
+    "RelativePath": "api/AccountState/activate/sub/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountStateController",
+    "Method": "CloseClientAccount",
+    "RelativePath": "api/AccountState/close/client/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountStateController",
+    "Method": "CloseSubAccount",
+    "RelativePath": "api/AccountState/close/sub/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountStateController",
+    "Method": "FreezeClientAccount",
+    "RelativePath": "api/AccountState/freeze/client/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountStateController",
+    "Method": "FreezeSubAccount",
+    "RelativePath": "api/AccountState/freeze/sub/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountStateController",
+    "Method": "SuspendClientAccount",
+    "RelativePath": "api/AccountState/suspend/client/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bank_Application.Controllers.AccountStateController",
+    "Method": "SuspendSubAccount",
+    "RelativePath": "api/AccountState/suspend/sub/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Bank_Application.Controllers.AccountTypeController",
     "Method": "GetById",
     "RelativePath": "api/AccountType/{id}",
@@ -271,6 +399,11 @@
       },
       {
         "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
         "Type": "System.String",
         "IsRequired": false
       }

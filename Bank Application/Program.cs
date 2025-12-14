@@ -36,6 +36,9 @@ builder.Services.AddScoped<IAccountFacadeService, AccountFacadeService>();
 builder.Services.AddScoped<ISubAccountRepository, SubAccountRepository>();
 builder.Services.AddScoped<ISubAccountService, SubAccountService>();
 builder.Services.AddScoped<IAccountHierarchyService, AccountHierarchyService>();
+builder.Services.AddScoped<IClientAccountRepository, ClientAccountRepository>();
+builder.Services.AddScoped<ISubAccountRepository, SubAccountRepository>();
+
 builder.Services.AddScoped<FeatureService>();
 
 builder.Services.AddScoped<IFeatureDecorator>(sp =>

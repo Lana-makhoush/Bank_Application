@@ -36,7 +36,8 @@ namespace Bank_Application.Controllers
                 client.MonthlyIncome,
                 client.AccountPurpose,
                 client.Phone,
-                client.Username
+                client.Username,
+                client.Email
             };
 
             return Ok(new { message = "تم إضافة العميل بنجاح", client = clientData });

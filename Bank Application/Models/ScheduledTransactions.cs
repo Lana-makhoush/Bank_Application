@@ -27,5 +27,6 @@ namespace Bank_Application.Models
         public bool? IsActive { get; set; } = true;
 
         public DateTime? CreatedAt { get; set; } = DateTime.Now;
+        public int? SubAccountId { get; set; }
     }
 }
