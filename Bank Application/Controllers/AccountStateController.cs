@@ -36,7 +36,7 @@ namespace Bank_Application.Controllers
 
             return Ok(new { status = 200, message = result.Message });
         }
-
+//
         [HttpPost("close/sub/{id}")]
         public async Task<IActionResult> CloseSubAccount(int id)
         {
