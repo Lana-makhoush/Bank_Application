@@ -6,11 +6,16 @@ using Bank_Application.Factories;
 using Bank_Application.Models;
 using Bank_Application.Repositories;
 using Bank_Application.Seeders;
+using Bank_Application.services;
 using Bank_Application.Services;
 using Bank_Application.Services.Facade;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,6 +36,10 @@ builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<IClientFacade, ClientFacade>();
 builder.Services.AddScoped<IFeatureRepository, FeatureRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<IClientAuthRepository, ClientAuthRepository>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IAccountFacadeService, AccountFacadeService>();
 builder.Services.AddScoped<ISubAccountRepository, SubAccountRepository>();
@@ -73,7 +82,35 @@ builder.Services.AddControllers()
             });
         };
     });
+// JWT
+var jwt = builder.Configuration.GetSection("JwtSettings");
+var key = Encoding.UTF8.GetBytes(jwt["Secret"]!);
 
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(opt =>
+    {
+        opt.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidIssuer = jwt["Issuer"],
+            ValidateAudience = true,
+            ValidAudience = jwt["Audience"],
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ValidateLifetime = true
+        };
+    });
+builder.Services.AddRateLimiter(options =>
+{
+    options.AddFixedWindowLimiter("login", config =>
+    {
+        config.PermitLimit = 5;        
+        config.Window = TimeSpan.FromMinutes(1); 
+        config.QueueLimit = 0;
+    });
+});
+builder.Services.AddAuthorization();
+builder.Services.AddControllers();
 builder.Services.AddScoped<IPasswordHasher<Employee>, PasswordHasher<Employee>>();
 
 builder.Services.AddEndpointsApiExplorer();
@@ -100,7 +137,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
+app.UseRateLimiter();
 app.UseAuthorization();
 
 app.MapControllers();
