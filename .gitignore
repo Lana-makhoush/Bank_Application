@@ -1,11 +1,13 @@
-# Build Folders
-bin/
-obj/
-
 # Visual Studio
 .vs/
 *.user
 *.suo
+*.cache
+*.log
+
+# Build Folders
+bin/
+obj/
 
 # Rider IDE
 .idea/
@@ -13,11 +15,8 @@ obj/
 # Publish output
 publish/
 
-# Logs
-*.log
-
 # OS Files
-.DS_Store
+*.DS_Store
 
-# Secrets
-*.env
+# Docker 
+dockerignore
