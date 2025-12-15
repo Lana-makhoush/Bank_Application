@@ -12,7 +12,7 @@ namespace Bank_Application.Seeders
         {
             context.Database.EnsureCreated();
 
-            var hasher = new PasswordHasher<Employee>();
+            
 
             if (!context.Employees.Any(e => e.Username == "admin"))
             {
@@ -24,10 +24,12 @@ namespace Bank_Application.Seeders
                     IdentityNumber = "111111111111",
                     Phone = "0912345678",
                     Role = "Admin",
+                    MustChangePassword = false,
                     CreatedAt = DateTime.Now
                 };
 
-                admin.Password = hasher.HashPassword(admin, "admin123");
+                admin.Password = BCrypt.Net.BCrypt.HashPassword ("admin123");
+
 
                 context.Employees.Add(admin);
             }
@@ -42,10 +44,11 @@ namespace Bank_Application.Seeders
                     IdentityNumber = "222222222222",
                     Phone = "0998765432",
                     Role = "Manager",
+                   
                     CreatedAt = DateTime.Now
                 };
 
-                manager.Password = hasher.HashPassword(manager, "manager123");
+                manager.Password = BCrypt.Net.BCrypt.HashPassword("manager123");
 
                 context.Employees.Add(manager);
             }

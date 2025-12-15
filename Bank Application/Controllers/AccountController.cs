@@ -3,7 +3,9 @@ using Bank_Application.DTOs;
 using Bank_Application.Models;
 using Bank_Application.Services;
 using Bank_Application.Services.Facade;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Bank_Application.Controllers
 {
@@ -112,6 +114,7 @@ namespace Bank_Application.Controllers
 
             return Ok(new { status = 200, data });
         }
+
 
     }
 }

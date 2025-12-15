@@ -41,7 +41,11 @@ namespace Bank_Application.Data
                .HasForeignKey(s => s.SubAccountTypeId)
                .OnDelete(DeleteBehavior.Restrict);
 
-
+            modelBuilder.Entity<SupportTicketReply>()
+     .HasOne(r => r.SupportTicket)
+     .WithMany(t => t.Replies)
+     .HasForeignKey(r => r.TicketId)
+     .OnDelete(DeleteBehavior.Cascade);
 
             //الميزة تابعة لاكثر من النوع والنوع له اكثر من ميزة
             base.OnModelCreating(modelBuilder);

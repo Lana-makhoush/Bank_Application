@@ -17,17 +17,18 @@ namespace Bank_Application.services
         private readonly IEmployeeRepository _employeeRepo;
         private readonly IConfiguration _config;
         private readonly IEmailService _email;
-
+        private readonly IJwtService _jwtService;
         public AuthService(
             IClientAuthRepository clientRepo,
             IEmployeeRepository employeeRepo,
             IConfiguration config,
-            IEmailService email)
+            IEmailService email, IJwtService jwtService)
         {
             _clientRepo = clientRepo;
             _employeeRepo = employeeRepo;
             _config = config;
             _email = email;
+            _jwtService = jwtService;
         }
 
         public async Task<(bool Success, string? Message)> RegisterClientAsync(ClientRegisterDto dto)
@@ -90,7 +91,7 @@ namespace Bank_Application.services
             if (!BCrypt.Net.BCrypt.Verify(dto.Password, client.Password))
                 return (false, null, "كلمة المرور خاطئة");
 
-            var token = GenerateJwt(client.ClientId, "User", out DateTime expiry);
+            var token = _jwtService.GenerateToken(client.ClientId, "User", out DateTime expiry);
 
             return (true, new AuthResponseDto
             {
@@ -104,29 +105,7 @@ namespace Bank_Application.services
         }
 
 
-        private string GenerateJwt(int id, string role, out DateTime exp)
-        {
-            var jwt = _config.GetSection("JwtSettings");
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt["Secret"]!));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            exp = DateTime.UtcNow.AddMinutes(int.Parse(jwt["ExpiryMinutes"]!));
-
-            var claims = new[]
-            {
-            new Claim(ClaimTypes.NameIdentifier, id.ToString()),
-            new Claim(ClaimTypes.Role, role)
-        };
-
-            var token = new JwtSecurityToken(
-                jwt["Issuer"],
-                jwt["Audience"],
-                claims,
-                expires: exp,
-                signingCredentials: creds
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }
+       
     }
 
 }

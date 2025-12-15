@@ -47,6 +47,12 @@ builder.Services.AddScoped<ISubAccountService, SubAccountService>();
 builder.Services.AddScoped<IAccountHierarchyService, AccountHierarchyService>();
 builder.Services.AddScoped<IClientAccountRepository, ClientAccountRepository>();
 builder.Services.AddScoped<ISubAccountRepository, SubAccountRepository>();
+builder.Services.AddScoped<ISupportTicketRepository, SupportTicketRepository>();
+builder.Services.AddScoped<ISupportTicketService, SupportTicketService>();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<FeatureService>();
+builder.Services.AddScoped<IJwtService, JwtService>();
 
 builder.Services.AddScoped<FeatureService>();
 

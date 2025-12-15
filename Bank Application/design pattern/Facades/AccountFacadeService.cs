@@ -12,20 +12,25 @@ namespace Bank_Application.Services.Facade
             _service = service;
         }
 
-        public async Task<object> CreateAccountForClient(int clientId, int accountTypeId, int accountStatusId, AccountDto dto)
+        public async Task<object?> CreateAccountForClient(
+     int clientId,
+     int accountTypeId,
+     int accountStatusId,
+     AccountDto dto)
         {
             if (!await _service.ClientExists(clientId))
-                throw new Exception("العميل غير موجود");
+                return null;
 
             if (!await _service.AccountTypeExists(accountTypeId))
-                throw new Exception("نوع الحساب غير موجود");
+                return "ACCOUNT_TYPE_NOT_FOUND";
 
             if (await _service.ClientHasAccountType(clientId, accountTypeId))
-                throw new Exception("لا يمكن إنشاء نفس نوع الحساب لنفس العميل");
+                return "DUPLICATE_ACCOUNT_TYPE";
 
             var account = await _service.CreateAccount(accountTypeId, accountStatusId);
 
-            var clientAccount = await _service.CreateClientAccount(clientId, account.AccountId!.Value, dto);
+            var clientAccount =
+                await _service.CreateClientAccount(clientId, account.AccountId!.Value, dto);
 
             return clientAccount;
         }
