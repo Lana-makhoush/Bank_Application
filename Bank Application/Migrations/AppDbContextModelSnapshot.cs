@@ -22,13 +22,15 @@ namespace Bank_Application.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.HasSequence<int>("GlobalAccountNumberSeq")
+                .StartsAt(100000L);
+
             modelBuilder.Entity("Bank_Application.Models.Account", b =>
                 {
-                    b.Property<int?>("AccountId")
+                    b.Property<int>("AccountId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("AccountId"));
+                        .HasColumnType("int")
+                        .HasDefaultValueSql("NEXT VALUE FOR GlobalAccountNumberSeq");
 
                     b.Property<int?>("AccountStatusId")
                         .HasColumnType("int");
@@ -366,11 +368,10 @@ namespace Bank_Application.Migrations
 
             modelBuilder.Entity("Bank_Application.Models.SubAccount", b =>
                 {
-                    b.Property<int?>("SubAccountId")
+                    b.Property<int>("SubAccountId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("SubAccountId"));
+                        .HasColumnType("int")
+                        .HasDefaultValueSql("NEXT VALUE FOR GlobalAccountNumberSeq");
 
                     b.Property<decimal?>("Balance")
                         .HasColumnType("decimal(18,2)");

@@ -5,7 +5,7 @@ namespace Bank_Application.Models
     public class Account
     {
 //
-        [Key] public int? AccountId { get; set; }
+        [Key] public int AccountId { get; set; }
         public ICollection<ClientAccount>? ClientAccounts { get; set; }
         public int? AccountTypeId { get; set; }
         [MaxLength(30)]

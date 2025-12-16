@@ -8,7 +8,7 @@ namespace Bank_Application.Models
     public class SubAccount
     {
         [Key]
-        public int? SubAccountId { get; set; }
+        public int SubAccountId { get; set; }
 
         public int? ParentAccountId { get; set; }
         public Account? ParentAccount { get; set; }

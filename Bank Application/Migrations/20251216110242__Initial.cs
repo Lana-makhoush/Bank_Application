@@ -11,6 +11,10 @@ namespace Bank_Application.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateSequence<int>(
+                name: "GlobalAccountNumberSeq",
+                startValue: 100000L);
+
             migrationBuilder.CreateTable(
                 name: "AccountStatuses",
                 columns: table => new
@@ -124,8 +128,7 @@ namespace Bank_Application.Migrations
                 name: "Accounts",
                 columns: table => new
                 {
-                    AccountId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AccountId = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR GlobalAccountNumberSeq"),
                     AccountTypeId = table.Column<int>(type: "int", nullable: true),
                     AccountStatusId = table.Column<int>(type: "int", nullable: true),
                     ParentAccountId = table.Column<int>(type: "int", nullable: true)
@@ -256,8 +259,7 @@ namespace Bank_Application.Migrations
                 name: "SubAccounts",
                 columns: table => new
                 {
-                    SubAccountId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    SubAccountId = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR GlobalAccountNumberSeq"),
                     ParentAccountId = table.Column<int>(type: "int", nullable: true),
                     DailyWithdrawalLimit = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
                     TransferLimit = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
@@ -522,6 +524,9 @@ namespace Bank_Application.Migrations
 
             migrationBuilder.DropTable(
                 name: "AccountTypes");
+
+            migrationBuilder.DropSequence(
+                name: "GlobalAccountNumberSeq");
         }
     }
 }

@@ -28,8 +28,19 @@ namespace Bank_Application.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-//كل حساب فرعي له حالة
+          
+            modelBuilder.HasSequence<int>("GlobalAccountNumberSeq")
+        .StartsAt(100000)
+        .IncrementsBy(1);
 
+            modelBuilder.Entity<Account>()
+                .Property(a => a.AccountId)
+                .HasDefaultValueSql("NEXT VALUE FOR GlobalAccountNumberSeq");
+
+            modelBuilder.Entity<SubAccount>()
+                .Property(sa => sa.SubAccountId)
+                .HasDefaultValueSql("NEXT VALUE FOR GlobalAccountNumberSeq");
+            //كل حساب فرعي له حالة
             modelBuilder.Entity<SubAccount>()
        .HasOne(s => s.SubAccountStatus)
        .WithMany(status => status.SubAccounts)

@@ -77,7 +77,7 @@ namespace Bank_Application.Controllers
 
                 var response = new SubAccountResponseDto
                 {
-                    SubAccountId = updated.SubAccountId ?? 0,
+                    SubAccountId = updated.SubAccountId ,
                     ParentAccountId = updated.ParentAccountId ?? 0,
                     DailyWithdrawalLimit = updated.DailyWithdrawalLimit,
                     TransferLimit = updated.TransferLimit,

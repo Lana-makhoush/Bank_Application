@@ -30,7 +30,7 @@ namespace Bank_Application.Services.Facade
             var account = await _service.CreateAccount(accountTypeId, accountStatusId);
 
             var clientAccount =
-                await _service.CreateClientAccount(clientId, account.AccountId!.Value, dto);
+                await _service.CreateClientAccount(clientId, account.AccountId!, dto);
 
             return clientAccount;
         }

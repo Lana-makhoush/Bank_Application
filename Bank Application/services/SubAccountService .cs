@@ -122,7 +122,7 @@ public class SubAccountService : ISubAccountService
 
         return list.Select(s => new SubAccountResponseDto
         {
-            SubAccountId = s.SubAccountId ?? 0,
+            SubAccountId = s.SubAccountId  ,
             ParentAccountId = s.ParentAccountId ?? 0,
             DailyWithdrawalLimit = s.DailyWithdrawalLimit,
             TransferLimit = s.TransferLimit,
