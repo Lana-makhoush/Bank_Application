@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Bank_Application.Migrations
 {
     /// <inheritdoc />
-    public partial class _Initial : Migration
+    public partial class Account : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -252,30 +252,6 @@ namespace Bank_Application.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ScheduledTransactions",
-                columns: table => new
-                {
-                    ScheduledTransactionId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    AccountId = table.Column<int>(type: "int", nullable: true),
-                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    RecurrenceType = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    NextExecutionDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IsActive = table.Column<bool>(type: "bit", nullable: true),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ScheduledTransactions", x => x.ScheduledTransactionId);
-                    table.ForeignKey(
-                        name: "FK_ScheduledTransactions_Accounts_AccountId",
-                        column: x => x.AccountId,
-                        principalTable: "Accounts",
-                        principalColumn: "AccountId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "SubAccounts",
                 columns: table => new
                 {
@@ -350,6 +326,36 @@ namespace Bank_Application.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "ScheduledTransactions",
+                columns: table => new
+                {
+                    ScheduledTransactionId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AccountId = table.Column<int>(type: "int", nullable: true),
+                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    RecurrenceType = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NextExecutionDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    IsActive = table.Column<bool>(type: "bit", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    SubAccountId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ScheduledTransactions", x => x.ScheduledTransactionId);
+                    table.ForeignKey(
+                        name: "FK_ScheduledTransactions_Accounts_AccountId",
+                        column: x => x.AccountId,
+                        principalTable: "Accounts",
+                        principalColumn: "AccountId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ScheduledTransactions_SubAccounts_SubAccountId",
+                        column: x => x.SubAccountId,
+                        principalTable: "SubAccounts",
+                        principalColumn: "SubAccountId");
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Accounts_AccountStatusId",
                 table: "Accounts",
@@ -389,6 +395,11 @@ namespace Bank_Application.Migrations
                 name: "IX_ScheduledTransactions_AccountId",
                 table: "ScheduledTransactions",
                 column: "AccountId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ScheduledTransactions_SubAccountId",
+                table: "ScheduledTransactions",
+                column: "SubAccountId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_SubAccounts_ParentAccountId",
@@ -442,9 +453,6 @@ namespace Bank_Application.Migrations
                 name: "ScheduledTransactions");
 
             migrationBuilder.DropTable(
-                name: "SubAccounts");
-
-            migrationBuilder.DropTable(
                 name: "SupportTickets");
 
             migrationBuilder.DropTable(
@@ -457,13 +465,16 @@ namespace Bank_Application.Migrations
                 name: "Employees");
 
             migrationBuilder.DropTable(
-                name: "Accounts");
+                name: "SubAccounts");
 
             migrationBuilder.DropTable(
                 name: "Clients");
 
             migrationBuilder.DropTable(
                 name: "TransactionTypes");
+
+            migrationBuilder.DropTable(
+                name: "Accounts");
 
             migrationBuilder.DropTable(
                 name: "AccountStatuses");

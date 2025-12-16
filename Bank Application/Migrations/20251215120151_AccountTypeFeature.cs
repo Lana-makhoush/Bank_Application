@@ -5,7 +5,7 @@
 namespace Bank_Application.Migrations
 {
     /// <inheritdoc />
-    public partial class SchaduledTransactions : Migration
+    public partial class AccountTypeFeature : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

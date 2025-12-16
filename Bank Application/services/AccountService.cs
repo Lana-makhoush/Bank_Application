@@ -31,7 +31,10 @@ namespace Bank_Application.Services
         }
 
 
-        public async Task<ClientAccount> CreateClientAccount(int clientId, int accountId, AccountDto dto)
+        public async Task<ClientAccount> CreateClientAccount(
+     int clientId,
+     int accountId,
+     AccountDto dto)
         {
             var ca = new ClientAccount
             {
@@ -41,8 +44,11 @@ namespace Bank_Application.Services
                 CreatedAt = dto.CreatedAt
             };
 
-            return await _repo.CreateClientAccount(ca);
+            await _repo.CreateClientAccount(ca);
+
+            return await _repo.GetClientAccountById(ca.Id)!;
         }
+
 
         public Task<Client?> GetClientById(int clientId) => _repo.GetClientById(clientId);
 

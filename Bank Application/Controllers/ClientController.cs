@@ -1,6 +1,8 @@
 ﻿using Bank_Application.DTOs;
 using Bank_Application.Facade;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace Bank_Application.Controllers
@@ -43,5 +45,8 @@ namespace Bank_Application.Controllers
             return Ok(new { message = "تم إضافة العميل بنجاح", client = clientData });
         }
 
-    }
+
+
+
+}
 }

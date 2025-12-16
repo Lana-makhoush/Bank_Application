@@ -24,12 +24,12 @@ namespace Bank_Application.Models
             ErrorMessage = "الوصف يجب أن يكون نصًا عربيًا أو إنجليزيًا فقط")]
         public string? Description { get; set; }
 
-        [RegularExpression(@"^(Open|InProgress|Closed)$",
-            ErrorMessage = "الحالة يجب أن تكون: Open, InProgress, Closed")]
-        public string? Status { get; set; } = "Open";
+       
 
         public DateTime? CreatedAt { get; set; } = DateTime.Now;
 
         public DateTime? UpdatedAt { get; set; }
+        public ICollection<SupportTicketReply>? Replies { get; set; }
+
     }
 }
