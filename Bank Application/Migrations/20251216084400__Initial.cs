@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Bank_Application.Migrations
 {
     /// <inheritdoc />
-    public partial class Account : Migration
+    public partial class _Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -328,8 +328,7 @@ namespace Bank_Application.Migrations
                 });
 
             migrationBuilder.CreateTable(
-<<<<<<<< HEAD:Bank Application/Migrations/20251215235107__Initial.cs
-                name: "SupportTicketReply",
+                name: "SupportTicketReplies",
                 columns: table => new
                 {
                     ReplyId = table.Column<int>(type: "int", nullable: false)
@@ -341,14 +340,14 @@ namespace Bank_Application.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_SupportTicketReply", x => x.ReplyId);
+                    table.PrimaryKey("PK_SupportTicketReplies", x => x.ReplyId);
                     table.ForeignKey(
-                        name: "FK_SupportTicketReply_Employees_EmployeeId",
+                        name: "FK_SupportTicketReplies_Employees_EmployeeId",
                         column: x => x.EmployeeId,
                         principalTable: "Employees",
                         principalColumn: "EmployeeId");
                     table.ForeignKey(
-                        name: "FK_SupportTicketReply_SupportTickets_TicketId",
+                        name: "FK_SupportTicketReplies_SupportTickets_TicketId",
                         column: x => x.TicketId,
                         principalTable: "SupportTickets",
                         principalColumn: "TicketId",
@@ -356,8 +355,6 @@ namespace Bank_Application.Migrations
                 });
 
             migrationBuilder.CreateTable(
-========
->>>>>>>> 47174d445a664db062b30703036cee0a6bc92098:Bank Application/Migrations/20251215120052_Account.cs
                 name: "ScheduledTransactions",
                 columns: table => new
                 {
@@ -448,13 +445,13 @@ namespace Bank_Application.Migrations
                 column: "SubAccountTypeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SupportTicketReply_EmployeeId",
-                table: "SupportTicketReply",
+                name: "IX_SupportTicketReplies_EmployeeId",
+                table: "SupportTicketReplies",
                 column: "EmployeeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SupportTicketReply_TicketId",
-                table: "SupportTicketReply",
+                name: "IX_SupportTicketReplies_TicketId",
+                table: "SupportTicketReplies",
                 column: "TicketId");
 
             migrationBuilder.CreateIndex(
@@ -494,11 +491,7 @@ namespace Bank_Application.Migrations
                 name: "ScheduledTransactions");
 
             migrationBuilder.DropTable(
-<<<<<<<< HEAD:Bank Application/Migrations/20251215235107__Initial.cs
-                name: "SupportTicketReply");
-========
-                name: "SupportTickets");
->>>>>>>> 47174d445a664db062b30703036cee0a6bc92098:Bank Application/Migrations/20251215120052_Account.cs
+                name: "SupportTicketReplies");
 
             migrationBuilder.DropTable(
                 name: "TransactionLogs");
@@ -513,7 +506,6 @@ namespace Bank_Application.Migrations
                 name: "Employees");
 
             migrationBuilder.DropTable(
-<<<<<<<< HEAD:Bank Application/Migrations/20251215235107__Initial.cs
                 name: "SupportTickets");
 
             migrationBuilder.DropTable(
@@ -521,23 +513,11 @@ namespace Bank_Application.Migrations
 
             migrationBuilder.DropTable(
                 name: "Accounts");
-========
-                name: "SubAccounts");
->>>>>>>> 47174d445a664db062b30703036cee0a6bc92098:Bank Application/Migrations/20251215120052_Account.cs
 
             migrationBuilder.DropTable(
                 name: "Clients");
 
             migrationBuilder.DropTable(
-<<<<<<<< HEAD:Bank Application/Migrations/20251215235107__Initial.cs
-========
-                name: "TransactionTypes");
-
-            migrationBuilder.DropTable(
-                name: "Accounts");
-
-            migrationBuilder.DropTable(
->>>>>>>> 47174d445a664db062b30703036cee0a6bc92098:Bank Application/Migrations/20251215120052_Account.cs
                 name: "AccountStatuses");
 
             migrationBuilder.DropTable(
