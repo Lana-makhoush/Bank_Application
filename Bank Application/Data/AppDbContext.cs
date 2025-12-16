@@ -9,6 +9,7 @@ namespace Bank_Application.Data
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public DbSet<SupportTicketReply> SupportTicketReplies { get; set; }
 
         public DbSet<Account> Accounts { get; set; }
         public DbSet<AccountStatus> AccountStatuses { get; set; }
@@ -42,10 +43,10 @@ namespace Bank_Application.Data
                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<SupportTicketReply>()
-     .HasOne(r => r.SupportTicket)
-     .WithMany(t => t.Replies)
-     .HasForeignKey(r => r.TicketId)
-     .OnDelete(DeleteBehavior.Cascade);
+        .HasOne(r => r.SupportTicket)
+        .WithMany(t => t.Replies)
+        .HasForeignKey(r => r.TicketId)
+        .OnDelete(DeleteBehavior.Cascade);
 
             //الميزة تابعة لاكثر من النوع والنوع له اكثر من ميزة
             base.OnModelCreating(modelBuilder);

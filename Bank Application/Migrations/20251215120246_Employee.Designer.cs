@@ -4,6 +4,7 @@ using Bank_Application.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bank_Application.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251215120246_Employee")]
+    partial class Employee
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -208,11 +211,11 @@ namespace Bank_Application.Migrations
 
             modelBuilder.Entity("Bank_Application.Models.Employee", b =>
                 {
-                    b.Property<int>("EmployeeId")
+                    b.Property<int?>("EmployeeId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmployeeId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("EmployeeId"));
 
                     b.Property<DateTime?>("CreatedAt")
                         .IsRequired()
@@ -232,18 +235,12 @@ namespace Bank_Application.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MiddleName")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("MustChangePassword")
-                        .HasColumnType("bit");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -431,6 +428,9 @@ namespace Bank_Application.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Subject")
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
@@ -443,37 +443,6 @@ namespace Bank_Application.Migrations
                     b.HasIndex("ClientId");
 
                     b.ToTable("SupportTickets");
-                });
-
-            modelBuilder.Entity("Bank_Application.Models.SupportTicketReply", b =>
-                {
-                    b.Property<int?>("ReplyId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("ReplyId"));
-
-                    b.Property<int?>("EmployeeId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("RepliedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ReplyText")
-                        .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
-
-                    b.Property<int?>("TicketId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ReplyId");
-
-                    b.HasIndex("EmployeeId");
-
-                    b.HasIndex("TicketId");
-
-                    b.ToTable("SupportTicketReplies");
                 });
 
             modelBuilder.Entity("Bank_Application.Models.TransactionLog", b =>
@@ -649,22 +618,6 @@ namespace Bank_Application.Migrations
                     b.Navigation("Client");
                 });
 
-            modelBuilder.Entity("Bank_Application.Models.SupportTicketReply", b =>
-                {
-                    b.HasOne("Bank_Application.Models.Employee", "Employee")
-                        .WithMany()
-                        .HasForeignKey("EmployeeId");
-
-                    b.HasOne("Bank_Application.Models.SupportTicket", "SupportTicket")
-                        .WithMany("Replies")
-                        .HasForeignKey("TicketId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.Navigation("Employee");
-
-                    b.Navigation("SupportTicket");
-                });
-
             modelBuilder.Entity("Bank_Application.Models.TransactionLog", b =>
                 {
                     b.HasOne("Bank_Application.Models.Client", "Client")
@@ -736,11 +689,6 @@ namespace Bank_Application.Migrations
             modelBuilder.Entity("Bank_Application.Models.SubAccount", b =>
                 {
                     b.Navigation("ScheduledTransactions");
-                });
-
-            modelBuilder.Entity("Bank_Application.Models.SupportTicket", b =>
-                {
-                    b.Navigation("Replies");
                 });
 
             modelBuilder.Entity("Bank_Application.Models.TransactionType", b =>

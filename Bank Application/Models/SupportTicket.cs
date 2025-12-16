@@ -24,7 +24,7 @@ namespace Bank_Application.Models
             ErrorMessage = "الوصف يجب أن يكون نصًا عربيًا أو إنجليزيًا فقط")]
         public string? Description { get; set; }
 
-
+       
 
         public DateTime? CreatedAt { get; set; } = DateTime.Now;
 

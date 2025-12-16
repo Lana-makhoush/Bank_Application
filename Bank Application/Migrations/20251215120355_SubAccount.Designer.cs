@@ -4,6 +4,7 @@ using Bank_Application.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,16 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bank_Application.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+
+    [Migration("20251215235107__Initial")]
+    partial class _Initial
+
+    [Migration("20251215120355_SubAccount")]
+    partial class SubAccount
+
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -473,7 +481,7 @@ namespace Bank_Application.Migrations
 
                     b.HasIndex("TicketId");
 
-                    b.ToTable("SupportTicketReplies");
+                    b.ToTable("SupportTicketReply");
                 });
 
             modelBuilder.Entity("Bank_Application.Models.TransactionLog", b =>

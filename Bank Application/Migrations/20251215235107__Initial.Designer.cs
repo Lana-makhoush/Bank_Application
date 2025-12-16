@@ -12,8 +12,13 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bank_Application.Migrations
 {
     [DbContext(typeof(AppDbContext))]
+<<<<<<<< HEAD:Bank Application/Migrations/20251215235107__Initial.Designer.cs
     [Migration("20251215235107__Initial")]
     partial class _Initial
+========
+    [Migration("20251215120355_SubAccount")]
+    partial class SubAccount
+>>>>>>>> 47174d445a664db062b30703036cee0a6bc92098:Bank Application/Migrations/20251215120355_SubAccount.Designer.cs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

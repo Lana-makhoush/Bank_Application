@@ -328,7 +328,7 @@ namespace Bank_Application.Migrations
                 });
 
             migrationBuilder.CreateTable(
-<<<<<<<< HEAD:Bank Application/Migrations/20251215235107__Initial.cs
+
                 name: "SupportTicketReply",
                 columns: table => new
                 {
@@ -356,8 +356,8 @@ namespace Bank_Application.Migrations
                 });
 
             migrationBuilder.CreateTable(
-========
->>>>>>>> 47174d445a664db062b30703036cee0a6bc92098:Bank Application/Migrations/20251215120052_Account.cs
+
+
                 name: "ScheduledTransactions",
                 columns: table => new
                 {
@@ -494,11 +494,10 @@ namespace Bank_Application.Migrations
                 name: "ScheduledTransactions");
 
             migrationBuilder.DropTable(
-<<<<<<<< HEAD:Bank Application/Migrations/20251215235107__Initial.cs
+
                 name: "SupportTicketReply");
-========
+
                 name: "SupportTickets");
->>>>>>>> 47174d445a664db062b30703036cee0a6bc92098:Bank Application/Migrations/20251215120052_Account.cs
 
             migrationBuilder.DropTable(
                 name: "TransactionLogs");
@@ -521,23 +520,22 @@ namespace Bank_Application.Migrations
 
             migrationBuilder.DropTable(
                 name: "Accounts");
-========
+
                 name: "SubAccounts");
->>>>>>>> 47174d445a664db062b30703036cee0a6bc92098:Bank Application/Migrations/20251215120052_Account.cs
+
 
             migrationBuilder.DropTable(
                 name: "Clients");
 
             migrationBuilder.DropTable(
-<<<<<<<< HEAD:Bank Application/Migrations/20251215235107__Initial.cs
-========
+
                 name: "TransactionTypes");
 
             migrationBuilder.DropTable(
                 name: "Accounts");
 
             migrationBuilder.DropTable(
->>>>>>>> 47174d445a664db062b30703036cee0a6bc92098:Bank Application/Migrations/20251215120052_Account.cs
+
                 name: "AccountStatuses");
 
             migrationBuilder.DropTable(

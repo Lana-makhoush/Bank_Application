@@ -114,7 +114,7 @@ namespace Bank_Application.Controllers
 
             return Ok(new { status = 200, data });
         }
-
+      
 
     }
 }
