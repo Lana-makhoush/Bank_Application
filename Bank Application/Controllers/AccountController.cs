@@ -30,26 +30,34 @@ namespace Bank_Application.Controllers
      int accountTypeId,
      [FromForm] AccountDto dto)
         {
-            try
-            {
-                var result = await _facade.CreateAccountForClient(clientId, accountTypeId, 1, dto);
+            var result = await _facade.CreateAccountForClient(clientId, accountTypeId, 1, dto);
 
-                return Ok(new
-                {
-                    status = 200,
-                    message = "تم إنشاء الحساب بنجاح",
-                    data = result
-                });
-            }
-            catch (Exception ex)
+            if (result is string errorMessage) 
             {
                 return BadRequest(new
                 {
                     status = 400,
-                    message = ex.Message
+                    message = errorMessage
                 });
             }
+
+            if (result == null) 
+            {
+                return NotFound(new
+                {
+                    status = 404,
+                    message = "العميل غير موجود"
+                });
+            }
+
+            // نجاح
+            return Ok(new
+            {
+                status = 200,
+                message = "تم إنشاء الحساب بنجاح"
+            });
         }
+
 
         [HttpPut("UpdateAccount/{clientAccountId}/{newAccountTypeId}")]
         public async Task<IActionResult> UpdateAccount(
