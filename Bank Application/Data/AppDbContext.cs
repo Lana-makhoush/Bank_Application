@@ -25,7 +25,7 @@ namespace Bank_Application.Data
         public DbSet<TransactionLog> TransactionLogs { get; set; }
         public DbSet<TransactionType> TransactionTypes { get; set; }
         public DbSet<AccountTypeFeature> AccountTypeFeatures { get; set; }
-
+        public DbSet<Recommendation> Recommendations { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
           
@@ -52,6 +52,11 @@ namespace Bank_Application.Data
                .WithMany(t => t.SubAccounts)
                .HasForeignKey(s => s.SubAccountTypeId)
                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Recommendation>()
+         .HasOne(r => r.Client)
+         .WithMany(c => c.Recommendations)
+         .HasForeignKey(r => r.ClientId);
 
             modelBuilder.Entity<SupportTicketReply>()
         .HasOne(r => r.SupportTicket)

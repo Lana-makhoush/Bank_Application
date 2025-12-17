@@ -15,8 +15,7 @@ namespace Bank_Application.Models
         [ForeignKey("TransactionTypeId")]
         public TransactionType? TransactionType { get; set; }
 
-        public int? SenderAccountId { get; set; }
-
+     
         public int? ReceiverAccountId { get; set; }
 
         [ForeignKey("ReceiverAccountId")]
