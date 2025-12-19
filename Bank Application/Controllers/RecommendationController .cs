@@ -17,14 +17,11 @@ namespace Bank_Application.Controllers
         {
             _service = service;
         }
-
         [HttpPost("generate")]
         public async Task<IActionResult> Generate()
         {
             var clientId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
-
             await _service.GenerateAsync(clientId);
-
             return Ok(new { message = "تم توليد التوصيات بنجاح" });
         }
 
@@ -35,5 +32,6 @@ namespace Bank_Application.Controllers
             var result = await _service.GetClientRecommendationsAsync(clientId);
             return Ok(result);
         }
+
     }
 }

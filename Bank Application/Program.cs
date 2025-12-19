@@ -8,6 +8,7 @@ using Bank_Application.Seeders;
 using Bank_Application.services;
 using Bank_Application.Services;
 using Bank_Application.Services.Facade;
+using Bank_Application.Strategies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -62,6 +63,12 @@ builder.Services.AddScoped<IPasswordHasher<Employee>, PasswordHasher<Employee>>(
 builder.Services.AddScoped<IClientAuthRepository, ClientAuthRepository>();
 builder.Services.AddScoped<IFeatureRepository, FeatureRepository>();
 builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IRecommendationStrategy, SavingsRecommendationStrategy>();
+builder.Services.AddScoped<IRecommendationStrategy, PremiumRecommendationStrategy>();
+
+builder.Services.AddScoped<IRecommendationService, RecommendationService>();
+builder.Services.AddScoped<ITransactionLogRepository, TransactionLogRepository>();
+builder.Services.AddScoped<IRecommendationRepository, RecommendationRepository>();
 
 builder.Services.AddScoped<IFeatureDecorator>(sp =>
 {

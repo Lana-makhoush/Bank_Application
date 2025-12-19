@@ -60,10 +60,7 @@ namespace Bank_Application.Controllers
 
 
 
-
-
-
-
+        [Authorize(Roles = "Manager")]
 
         [HttpDelete("DeleteFeature/{featureId:int}")]
         public async Task<IActionResult> DeleteFeature(int featureId)
@@ -85,6 +82,7 @@ namespace Bank_Application.Controllers
                 message = "تم حذف الميزة بنجاح"
             });
         }
+        [Authorize(Roles = "Manager,Teller")]
 
         [HttpPost("assign-Feature-to-AccountType/{featureId:int}/{accountTypeId:int}")]
         public async Task<IActionResult> AssignFeature(int featureId, int accountTypeId)
@@ -113,7 +111,6 @@ namespace Bank_Application.Controllers
         {
             var resultList = new List<object>();
 
-            // 1️⃣ كل الحسابات الرئيسية
             var clientAccounts = await _accountService.GetAllClientAccounts();
             foreach (var ca in clientAccounts)
             {
@@ -128,7 +125,7 @@ namespace Bank_Application.Controllers
 
                     foreach (var feature in features)
                     {
-                        decimal cost = feature.Cost; // Cost أصبح decimal مباشرة
+                        decimal cost = feature.Cost; 
                         balanceAfter -= cost;
                         if (balanceAfter < 0) balanceAfter = 0;
 
@@ -139,7 +136,6 @@ namespace Bank_Application.Controllers
                         });
                     }
 
-                    // تحديث الرصيد بعد الاقتطاع
                     ca.Balance = balanceAfter;
                     await _accountService.UpdateClientAccountBalance(ca.Id, balanceAfter);
 
@@ -155,7 +151,6 @@ namespace Bank_Application.Controllers
                 }
             }
 
-            // 2️⃣ كل الحسابات الفرعية
             var subAccounts = await _accountService.GetAllSubAccounts();
             foreach (var sa in subAccounts)
             {

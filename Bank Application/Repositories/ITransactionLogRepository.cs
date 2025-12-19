@@ -9,10 +9,5 @@ namespace Bank_Application.Repositories
         Task<List<TransactionLog>> GetByClientIdAsync(int clientId);
     }
 
-    public interface IRecommendationRepository
-    {
-        Task AddAsync(Recommendation recommendation);
-        Task<bool> ExistsAsync(int clientId, string message);
-        Task<List<Recommendation>> GetByClientIdAsync(int clientId);
-    }
+   
 }
