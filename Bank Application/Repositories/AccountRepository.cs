@@ -42,10 +42,10 @@ namespace Bank_Application.Repositories
             return await _context.Clients.FirstOrDefaultAsync(x => x.ClientId == clientId);
         }
 
-        public async Task<AccountType?> GetAccountTypeById(int accountTypeId)
-        {
-            return await _context.AccountTypes.FirstOrDefaultAsync(x => x.AccountTypeId == accountTypeId);
-        }
+        //public async Task<AccountType?> GetAccountTypeById(int accountTypeId)
+        //{
+        //    return await _context.AccountTypes.FirstOrDefaultAsync(x => x.AccountTypeId == accountTypeId);
+        //}
 
        
         public async Task<bool> ClientHasAccountType(int clientId, int accountTypeId)
@@ -104,5 +104,64 @@ namespace Bank_Application.Repositories
                 .Include(a => a.SubAccounts)
                 .FirstOrDefaultAsync(a => a.AccountId == accountId);
         }
+        public async Task<List<Feature>> GetFeaturesByAccountType(int accountTypeId)
+        {
+            return await _context.AccountTypeFeatures
+                .Include(atf => atf.Feature)
+                .Where(atf => atf.AccountTypeId == accountTypeId)
+                .Select(atf => atf.Feature)
+                .ToListAsync();
+        }
+        public Task<List<SubAccount>> GetAllSubAccounts()
+        {
+            return _context.SubAccounts
+                .ToListAsync();
+        }
+        public async Task<AccountType?> GetAccountTypeById(int accountTypeId)
+        {
+            return await _context.AccountTypes
+                .Include(at => at.AccountTypeFeatures)
+                    .ThenInclude(atf => atf.Feature)
+                .FirstOrDefaultAsync(at => at.AccountTypeId == accountTypeId);
+        }
+
+
+
+
+        public async Task UpdateClientAccountBalance(int clientAccountId, decimal newBalance)
+        {
+            var account = await _context.ClientAccounts
+                .FirstOrDefaultAsync(a => a.Id == clientAccountId);
+
+            if (account == null) return;
+
+            account.Balance = newBalance;
+
+            _context.Entry(account).Property(x => x.Balance).IsModified = true;
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task UpdateSubAccountBalance(int subAccountId, decimal newBalance)
+        {
+            var subAccount = await _context.SubAccounts
+                .FirstOrDefaultAsync(s => s.SubAccountId == subAccountId);
+
+            if (subAccount == null) return;
+
+            subAccount.Balance = newBalance;
+
+            _context.Entry(subAccount).Property(x => x.Balance).IsModified = true;
+            await _context.SaveChangesAsync();
+        }
+        public async Task<List<Account>> GetAccountsWithSubAccountsByClientIdAsync(int clientId)
+        {
+            return await _context.Accounts
+                .Include(a => a.AccountType)
+                .Include(a => a.SubAccounts) 
+                .Include(a => a.ClientAccounts)
+                .Where(a => a.ClientAccounts.Any(ca => ca.ClientId == clientId))
+                .ToListAsync();
+        }
+
     }
 }

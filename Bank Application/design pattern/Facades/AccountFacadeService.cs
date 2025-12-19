@@ -13,10 +13,10 @@ namespace Bank_Application.Services.Facade
         }
 
         public async Task<object?> CreateAccountForClient(
-     int clientId,
-     int accountTypeId,
-     int accountStatusId,
-     AccountDto dto)
+    int clientId,
+    int accountTypeId,
+    int accountStatusId,
+    AccountDto dto)
         {
             if (!await _service.ClientExists(clientId))
                 return null;
@@ -29,8 +29,10 @@ namespace Bank_Application.Services.Facade
 
             var account = await _service.CreateAccount(accountTypeId, accountStatusId);
 
-            var clientAccount =
-                await _service.CreateClientAccount(clientId, account.AccountId!, dto);
+            var clientAccount = await _service.CreateClientAccount(clientId, account.AccountId!, dto);
+
+            var features = await _service.GetFeaturesByAccountType(accountTypeId);
+            await _service.DeductFeaturesFromAccount(clientAccount, features);
 
             return clientAccount;
         }

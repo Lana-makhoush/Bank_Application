@@ -28,7 +28,8 @@ namespace Bank_Application.Data
         public DbSet<Recommendation> Recommendations { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-          
+           
+
             modelBuilder.HasSequence<int>("GlobalAccountNumberSeq")
         .StartsAt(100000)
         .IncrementsBy(1);

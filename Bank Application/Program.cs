@@ -40,6 +40,7 @@ builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<ITransactionLogRepository, TransactionLogRepository>();
 builder.Services.AddScoped<IRecommendationRepository, RecommendationRepository>();
 
+// ================= Services =================
 builder.Services.AddScoped<IAccountTypeService, AccountTypeService>();
 builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
@@ -60,8 +61,6 @@ builder.Services.AddScoped<FeatureService>();
 builder.Services.AddScoped<IPasswordHasher<Employee>, PasswordHasher<Employee>>();
 builder.Services.AddScoped<IClientAuthRepository, ClientAuthRepository>();
 builder.Services.AddScoped<IFeatureRepository, FeatureRepository>();
-
-// ================= Missing Services =================
 builder.Services.AddScoped<IEmailService, EmailService>();
 
 builder.Services.AddScoped<IFeatureDecorator>(sp =>
@@ -76,22 +75,6 @@ builder.Services.AddControllers()
     {
         options.JsonSerializerOptions.ReferenceHandler =
             System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
-    })
-    .ConfigureApiBehaviorOptions(options =>
-    {
-        options.InvalidModelStateResponseFactory = context =>
-        {
-            var firstError = context.ModelState
-                .Where(ms => ms.Value.Errors.Count > 0)
-                .Select(ms => ms.Value.Errors.First().ErrorMessage)
-                .FirstOrDefault();
-
-            return new BadRequestObjectResult(new
-            {
-                message = firstError,
-                status = 400
-            });
-        };
     });
 
 var jwt = builder.Configuration.GetSection("JwtSettings");
@@ -122,11 +105,37 @@ builder.Services.AddRateLimiter(options =>
     });
 });
 
+builder.Services.AddSignalR();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLiveServer", policy =>
+    {
+        policy
+            .WithOrigins("http://127.0.0.1:5500")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
+    });
+});
+
 builder.Services.AddAuthorization();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseHttpsRedirection();
+
+app.UseRouting();
+
+app.UseCors("AllowLiveServer");
+
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapHub<NotificationHub>("/supportTicketHub");
+app.MapControllers();
 
 using (var scope = app.Services.CreateScope())
 {
@@ -141,9 +150,4 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-app.UseAuthentication();
-app.UseRateLimiter();
-app.UseAuthorization();
-app.MapControllers();
 app.Run();

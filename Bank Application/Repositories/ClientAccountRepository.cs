@@ -83,6 +83,7 @@ namespace Bank_Application.Repositories
             await _context.SaveChangesAsync();
             return (true, "تم تجميد الحساب الرئيسي");
         }
+
     }
 
 }

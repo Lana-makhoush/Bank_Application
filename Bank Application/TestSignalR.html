@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Test SignalR</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.7/signalr.min.js"></script>
+</head>
+<body>
+    <h2>اختبار الإشعارات من الموظف</h2>
+    <ul id="messagesList"></ul>
+
+    <script>
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("https://localhost:5001/supportTicketHub") // رابط السيرفر ASP.NET Core
+            .build();
+
+        connection.on("ReceiveReply", function(replyText) {
+            const li = document.createElement("li");
+            li.textContent = "لديك رد جديد: " + replyText;
+            document.getElementById("messagesList").appendChild(li);
+        });
+
+        connection.start()
+            .then(() => console.log("تم الاتصال بالـ Hub بنجاح"))
+            .catch(err => console.error(err.toString()));
+    </script>
+</body>
+</html>

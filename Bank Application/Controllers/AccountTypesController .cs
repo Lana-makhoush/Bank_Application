@@ -1,5 +1,6 @@
 ﻿using Bank_Application.DTOs;
 using Bank_Application.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bank_Application.Controllers
@@ -16,6 +17,7 @@ namespace Bank_Application.Controllers
             _service = service;
             _facade = facade;
         }
+        [Authorize(Roles = "Manager")]
         [HttpPost("add")]
         public IActionResult Add([FromForm] AccountTypeDto dto)
         {
@@ -33,6 +35,8 @@ namespace Bank_Application.Controllers
                 data = result
             });
         }
+        [Authorize(Roles = "Manager")]
+
         [HttpPut("edit/{id}")]
         public IActionResult Edit(int id, [FromForm] EditAccountTypeDto dto)
         {
@@ -51,6 +55,8 @@ namespace Bank_Application.Controllers
                 data = result
             });
         }
+        [Authorize(Roles = "Manager")]
+
         [HttpDelete("delete/{id}")]
         public IActionResult Delete(int id)
         {
@@ -64,6 +70,8 @@ namespace Bank_Application.Controllers
                 message = "تم حذف نوع الحساب بنجاح"
             });
         }
+        [Authorize(Roles = "Manager,Admin")]
+
         [HttpGet("all")]
         public IActionResult GetAll()
         {
@@ -75,6 +83,7 @@ namespace Bank_Application.Controllers
                 data = result
             });
         }
+        [Authorize(Roles = "Manager,Admin")]
 
         [HttpGet("{id}")]
         public IActionResult GetById(int id)

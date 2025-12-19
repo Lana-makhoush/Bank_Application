@@ -13,7 +13,11 @@ public class SubAccountService : ISubAccountService
         _repo = repo;
     }
 
-    public async Task<SubAccount> CreateSubAccountAsync(SubAccountCreateDto dto, int statusId)
+    public async Task<SubAccount> CreateSubAccountAsync(
+    SubAccountCreateDto dto,
+    int statusId,
+    int subAccountTypeId)
+
     {
         var parentExists = await _repo.ParentAccountExistsAsync(dto.ParentAccountId);
         if (!parentExists)
@@ -34,8 +38,12 @@ public class SubAccountService : ISubAccountService
             UserPermissions = dto.UserPermissions,
             Balance = dto.Balance,
             CreatedAt = dto.CreatedAt,
-            SubAccountStatusId = statusId
+            SubAccountStatusId = statusId,
+
+           
+            SubAccountTypeId = subAccountTypeId
         };
+
 
         var created = await _repo.CreateAsync(sub);
 
@@ -44,7 +52,12 @@ public class SubAccountService : ISubAccountService
         return created;
     }
 
-    public async Task<SubAccount?> UpdateSubAccountAsync(int subAccountId, int statusId, SubAccountUpdateDto dto)
+    public async Task<SubAccount?> UpdateSubAccountAsync(
+     int subAccountId,
+     int statusId,
+     SubAccountUpdateDto dto,
+     int subAccountTypeId // أضفنا المعامل هنا
+ )
     {
         var sub = await _repo.GetByIdAsync(subAccountId);
         if (sub == null)
@@ -83,10 +96,9 @@ public class SubAccountService : ISubAccountService
         if (dto.CreatedAt.HasValue)
             sub.CreatedAt = dto.CreatedAt.Value;
 
-       
-        
-
         sub.SubAccountStatusId = statusId;
+
+        sub.SubAccountTypeId = subAccountTypeId;
 
         var updated = await _repo.UpdateAsync(sub);
 
@@ -94,6 +106,7 @@ public class SubAccountService : ISubAccountService
 
         return updated;
     }
+
 
 
 

@@ -24,11 +24,16 @@ public class SubAccountRepository : ISubAccountRepository
         existing.TransferLimit = subAccount.TransferLimit;
         existing.UsageAreas = subAccount.UsageAreas;
         existing.UserPermissions = subAccount.UserPermissions;
+        existing.Balance = subAccount.Balance;
+        existing.CreatedAt = subAccount.CreatedAt;
         existing.SubAccountStatusId = subAccount.SubAccountStatusId;
+
+        existing.SubAccountTypeId = subAccount.SubAccountTypeId;
 
         await _context.SaveChangesAsync();
         return existing;
     }
+
 
     public async Task<bool> DeleteAsync(int subAccountId)
     {
@@ -158,6 +163,23 @@ public class SubAccountRepository : ISubAccountRepository
 
         return (true, "تم تجميد الحساب الفرعي");
     }
+    public async Task<List<Account>> GetAccountsWithSubAccountsByClientIdAsync(int clientId)
+    {
+        return await _context.Accounts
+            .Include(a => a.AccountType)
+            .Include(a => a.ClientAccounts)
+            .Include(a => a.SubAccounts) 
+            .Where(a => a.ClientAccounts.Any(ca => ca.ClientId == clientId))
+            .ToListAsync();
+    }
+    public async Task<List<SubAccount>> GetByAccountIdAsync(int accountId)
+    {
+        return await _context.SubAccounts
+            .Include(s => s.SubAccountStatus)
+            .Where(s => s.ParentAccountId == accountId)
+            .ToListAsync();
+    }
+
 
 
 }

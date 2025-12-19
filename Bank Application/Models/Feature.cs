@@ -16,7 +16,12 @@ namespace Bank_Application.Models
         [StringLength(200, MinimumLength = 5, ErrorMessage = "الوصف يجب أن يكون بين 5 و 200 حرف")]
         [RegularExpression(@"^[\u0621-\u064A a-zA-Z0-9\s.,\-]*$",
             ErrorMessage = "الوصف يمكن أن يحتوي على أحرف عربية، إنجليزية، أرقام، ومسافات، وعلامات ترقيم . , -")]
+      
         public string? Description { get; set; }
+    [Required(ErrorMessage = "حقل الكلفة مطلوب")]
+
+        [Range(0, double.MaxValue, ErrorMessage = "التكلفة يجب أن تكون رقمًا موجبًا")]
+        public decimal Cost { get; set; } 
 
         public ICollection<AccountTypeFeature>? AccountTypeFeatures { get; set; }
 

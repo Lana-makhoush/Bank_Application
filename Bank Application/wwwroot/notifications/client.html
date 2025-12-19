@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>اختبار إشعارات العميل</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.7/signalr.min.js"></script>
+</head>
+<body>
+    <h2>🔔 إشعارات العميل</h2>
+    <ul id="messages"></ul>
+
+    <script>
+        const clientId = 3;
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("https://localhost:44360/supportTicketHub?clientId=" + clientId)
+            .configureLogging(signalR.LogLevel.Information)
+            .build();
+
+        connection.on("ReceiveReply", message => {
+            const li = document.createElement("li");
+            li.textContent = message;
+            document.getElementById("messages").appendChild(li);
+        });
+
+        connection.start()
+            .then(() => console.log("✅ SignalR Connected"))
+            .catch(err => console.error("❌", err));
+    </script>
+</body>
+</html>

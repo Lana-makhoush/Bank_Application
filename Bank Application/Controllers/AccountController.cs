@@ -23,7 +23,7 @@ namespace Bank_Application.Controllers
             _service = service;
         }
 
-
+        [Authorize(Roles = "Teller")]
         [HttpPost("add-account/{clientId:int}/{accountTypeId:int}/1")]
         public async Task<IActionResult> AddAccount(
      int clientId,
@@ -50,7 +50,7 @@ namespace Bank_Application.Controllers
                 });
             }
 
-            // نجاح
+           
             return Ok(new
             {
                 status = 200,
@@ -58,7 +58,7 @@ namespace Bank_Application.Controllers
             });
         }
 
-
+        [Authorize(Roles = "Teller")]
         [HttpPut("UpdateAccount/{clientAccountId}/{newAccountTypeId}")]
         public async Task<IActionResult> UpdateAccount(
      int clientAccountId,
@@ -85,7 +85,7 @@ namespace Bank_Application.Controllers
         }
 
 
-
+        [Authorize(Roles = "Teller")]
         [HttpGet("GetAccountByClientAccountId/{clientAccountId}")]
         public async Task<IActionResult> GetAccountByClientAccountId(int clientAccountId)
         {
@@ -107,7 +107,7 @@ namespace Bank_Application.Controllers
             });
         }
 
-
+        [Authorize(Roles = "Teller,Manager")]
         [HttpGet("GetAllAccounts")]
         public async Task<IActionResult> GetAllAccounts()
         {
@@ -122,6 +122,7 @@ namespace Bank_Application.Controllers
 
             return Ok(new { status = 200, data });
         }
+
       
 
     }
