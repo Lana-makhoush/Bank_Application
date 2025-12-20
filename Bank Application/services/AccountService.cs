@@ -100,7 +100,6 @@ namespace Bank_Application.Services
 
         public async Task DeductAllFeaturesFromAccounts()
         {
-            // 1️⃣ الحسابات الرئيسية
             var clientAccounts = await _repo.GetAllClientAccounts();
 
             foreach (var ca in clientAccounts)
@@ -112,7 +111,6 @@ namespace Bank_Application.Services
                 }
             }
 
-            // 2️⃣ الحسابات الفرعية
             var subAccounts = await _repo.GetAllSubAccounts();
 
             foreach (var sa in subAccounts)
