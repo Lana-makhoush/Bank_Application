@@ -25,7 +25,7 @@ namespace Bank_Application.Data
         public DbSet<TransactionLog> TransactionLogs { get; set; }
         public DbSet<TransactionType> TransactionTypes { get; set; }
         public DbSet<AccountTypeFeature> AccountTypeFeatures { get; set; }
-
+        public DbSet<TransactionApproval> TransactionApprovals { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
           
@@ -135,12 +135,7 @@ namespace Bank_Application.Data
     .HasForeignKey(tl => tl.TransactionTypeId)
     .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<TransactionLog>()
-                .HasOne(tl => tl.ReceiverAccount)        
-                .WithMany(a => a.ReceivedTransactions)  
-                .HasForeignKey(tl => tl.ReceiverAccountId)
-                .OnDelete(DeleteBehavior.Restrict);
-
+         
 
             // TransactionLog , Client
             modelBuilder.Entity<TransactionLog>()

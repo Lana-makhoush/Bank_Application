@@ -229,6 +229,37 @@ namespace Bank_Application.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "TransactionLogs",
+                columns: table => new
+                {
+                    TransactionLogId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    TransactionTypeId = table.Column<int>(type: "int", nullable: true),
+                    SenderAccountId = table.Column<int>(type: "int", nullable: true),
+                    ReceiverAccountId = table.Column<int>(type: "int", nullable: true),
+                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    TransactionDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
+                    ClientId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TransactionLogs", x => x.TransactionLogId);
+                    table.ForeignKey(
+                        name: "FK_TransactionLogs_Clients_ClientId",
+                        column: x => x.ClientId,
+                        principalTable: "Clients",
+                        principalColumn: "ClientId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_TransactionLogs_TransactionTypes_TransactionTypeId",
+                        column: x => x.TransactionTypeId,
+                        principalTable: "TransactionTypes",
+                        principalColumn: "TransactionTypeId",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ClientAccounts",
                 columns: table => new
                 {
@@ -293,43 +324,6 @@ namespace Bank_Application.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "TransactionLogs",
-                columns: table => new
-                {
-                    TransactionLogId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    TransactionTypeId = table.Column<int>(type: "int", nullable: true),
-                    SenderAccountId = table.Column<int>(type: "int", nullable: true),
-                    ReceiverAccountId = table.Column<int>(type: "int", nullable: true),
-                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    TransactionDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
-                    ClientId = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_TransactionLogs", x => x.TransactionLogId);
-                    table.ForeignKey(
-                        name: "FK_TransactionLogs_Accounts_ReceiverAccountId",
-                        column: x => x.ReceiverAccountId,
-                        principalTable: "Accounts",
-                        principalColumn: "AccountId",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_TransactionLogs_Clients_ClientId",
-                        column: x => x.ClientId,
-                        principalTable: "Clients",
-                        principalColumn: "ClientId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_TransactionLogs_TransactionTypes_TransactionTypeId",
-                        column: x => x.TransactionTypeId,
-                        principalTable: "TransactionTypes",
-                        principalColumn: "TransactionTypeId",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "SupportTicketReplies",
                 columns: table => new
                 {
@@ -353,6 +347,35 @@ namespace Bank_Application.Migrations
                         column: x => x.TicketId,
                         principalTable: "SupportTickets",
                         principalColumn: "TicketId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TransactionApprovals",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    TransactionLogId = table.Column<int>(type: "int", nullable: false),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RequiredRole = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ApprovedByEmployeeId = table.Column<int>(type: "int", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ApprovedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TransactionApprovals", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_TransactionApprovals_Employees_ApprovedByEmployeeId",
+                        column: x => x.ApprovedByEmployeeId,
+                        principalTable: "Employees",
+                        principalColumn: "EmployeeId");
+                    table.ForeignKey(
+                        name: "FK_TransactionApprovals_TransactionLogs_TransactionLogId",
+                        column: x => x.TransactionLogId,
+                        principalTable: "TransactionLogs",
+                        principalColumn: "TransactionLogId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -462,14 +485,19 @@ namespace Bank_Application.Migrations
                 column: "ClientId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_TransactionApprovals_ApprovedByEmployeeId",
+                table: "TransactionApprovals",
+                column: "ApprovedByEmployeeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TransactionApprovals_TransactionLogId",
+                table: "TransactionApprovals",
+                column: "TransactionLogId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_TransactionLogs_ClientId",
                 table: "TransactionLogs",
                 column: "ClientId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_TransactionLogs_ReceiverAccountId",
-                table: "TransactionLogs",
-                column: "ReceiverAccountId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TransactionLogs_TransactionTypeId",
@@ -496,7 +524,7 @@ namespace Bank_Application.Migrations
                 name: "SupportTicketReplies");
 
             migrationBuilder.DropTable(
-                name: "TransactionLogs");
+                name: "TransactionApprovals");
 
             migrationBuilder.DropTable(
                 name: "Features");
@@ -505,19 +533,22 @@ namespace Bank_Application.Migrations
                 name: "SubAccounts");
 
             migrationBuilder.DropTable(
-                name: "Employees");
-
-            migrationBuilder.DropTable(
                 name: "SupportTickets");
 
             migrationBuilder.DropTable(
-                name: "TransactionTypes");
+                name: "Employees");
+
+            migrationBuilder.DropTable(
+                name: "TransactionLogs");
 
             migrationBuilder.DropTable(
                 name: "Accounts");
 
             migrationBuilder.DropTable(
                 name: "Clients");
+
+            migrationBuilder.DropTable(
+                name: "TransactionTypes");
 
             migrationBuilder.DropTable(
                 name: "AccountStatuses");

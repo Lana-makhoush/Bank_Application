@@ -479,11 +479,11 @@ namespace Bank_Application.Migrations
 
             modelBuilder.Entity("Bank_Application.Models.TransactionLog", b =>
                 {
-                    b.Property<int?>("TransactionLogId")
+                    b.Property<int>("TransactionLogId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("TransactionLogId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TransactionLogId"));
 
                     b.Property<decimal?>("Amount")
                         .HasColumnType("decimal(18,2)");
@@ -511,8 +511,6 @@ namespace Bank_Application.Migrations
 
                     b.HasIndex("ClientId");
 
-                    b.HasIndex("ReceiverAccountId");
-
                     b.HasIndex("TransactionTypeId");
 
                     b.ToTable("TransactionLogs");
@@ -533,6 +531,43 @@ namespace Bank_Application.Migrations
                     b.HasKey("TransactionTypeId");
 
                     b.ToTable("TransactionTypes");
+                });
+
+            modelBuilder.Entity("TransactionApproval", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("ApprovedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("ApprovedByEmployeeId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("RequiredRole")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TransactionLogId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApprovedByEmployeeId");
+
+                    b.HasIndex("TransactionLogId");
+
+                    b.ToTable("TransactionApprovals");
                 });
 
             modelBuilder.Entity("Bank_Application.Models.Account", b =>
@@ -673,11 +708,6 @@ namespace Bank_Application.Migrations
                         .HasForeignKey("ClientId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Bank_Application.Models.Account", "ReceiverAccount")
-                        .WithMany("ReceivedTransactions")
-                        .HasForeignKey("ReceiverAccountId")
-                        .OnDelete(DeleteBehavior.Restrict);
-
                     b.HasOne("Bank_Application.Models.TransactionType", "TransactionType")
                         .WithMany("TransactionLogs")
                         .HasForeignKey("TransactionTypeId")
@@ -685,16 +715,29 @@ namespace Bank_Application.Migrations
 
                     b.Navigation("Client");
 
-                    b.Navigation("ReceiverAccount");
-
                     b.Navigation("TransactionType");
+                });
+
+            modelBuilder.Entity("TransactionApproval", b =>
+                {
+                    b.HasOne("Bank_Application.Models.Employee", "ApprovedBy")
+                        .WithMany()
+                        .HasForeignKey("ApprovedByEmployeeId");
+
+                    b.HasOne("Bank_Application.Models.TransactionLog", "TransactionLog")
+                        .WithMany()
+                        .HasForeignKey("TransactionLogId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ApprovedBy");
+
+                    b.Navigation("TransactionLog");
                 });
 
             modelBuilder.Entity("Bank_Application.Models.Account", b =>
                 {
                     b.Navigation("ClientAccounts");
-
-                    b.Navigation("ReceivedTransactions");
 
                     b.Navigation("ScheduledTransactions");
 

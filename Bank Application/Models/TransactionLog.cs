@@ -7,7 +7,7 @@ namespace Bank_Application.Models
     public class TransactionLog
     {
         [Key]
-        public int? TransactionLogId { get; set; }
+        public int TransactionLogId { get; set; }
 
         //[Required(ErrorMessage = "نوع المعاملة مطلوب")]
         public int? TransactionTypeId { get; set; }
@@ -19,8 +19,7 @@ namespace Bank_Application.Models
 
         public int? ReceiverAccountId { get; set; }
 
-        [ForeignKey("ReceiverAccountId")]
-        public Account? ReceiverAccount { get; set; }
+       
 
         //[Required(ErrorMessage = "المبلغ مطلوب")]
         [Range(0.01, double.MaxValue, ErrorMessage = "المبلغ يجب أن يكون أكبر من صفر")]
