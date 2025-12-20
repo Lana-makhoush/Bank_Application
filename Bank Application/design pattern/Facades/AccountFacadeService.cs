@@ -13,10 +13,10 @@ namespace Bank_Application.Services.Facade
         }
 
         public async Task<object?> CreateAccountForClient(
-    int clientId,
-    int accountTypeId,
-    int accountStatusId,
-    AccountDto dto)
+     int clientId,
+     int accountTypeId,
+     int accountStatusId,
+     AccountDto dto)
         {
             if (!await _service.ClientExists(clientId))
                 return null;
@@ -24,8 +24,8 @@ namespace Bank_Application.Services.Facade
             if (!await _service.AccountTypeExists(accountTypeId))
                 return "ACCOUNT_TYPE_NOT_FOUND";
 
-            if (await _service.ClientHasAccountType(clientId, accountTypeId))
-                return "DUPLICATE_ACCOUNT_TYPE";
+            if (await _service.ClientAccountExistsWithSameData(clientId, accountTypeId, dto))
+                return "DUPLICATE_ACCOUNT_WITH_SAME_DATA";
 
             var account = await _service.CreateAccount(accountTypeId, accountStatusId);
 

@@ -20,14 +20,15 @@ public class SubAccountService : ISubAccountService
 
     {
         var parentExists = await _repo.ParentAccountExistsAsync(dto.ParentAccountId);
-        if (!parentExists)
-            throw new InvalidOperationException("الحساب الرئيسي غير موجود");
-
-        if (dto.DailyWithdrawalLimit == null)
-            throw new InvalidOperationException("حد السحب اليومي مطلوب");
-
-        if (dto.TransferLimit == null)
-            throw new InvalidOperationException("حد التحويل مطلوب");
+        if (await _repo.ExistsAsync(
+         dto.ParentAccountId,
+         dto.DailyWithdrawalLimit,
+         dto.TransferLimit,
+         dto.UsageAreas,
+         dto.UserPermissions))
+        {
+            throw new InvalidOperationException("حساب فرعي مطابق موجود مسبقًا");
+        }
 
         var sub = new SubAccount
         {

@@ -159,8 +159,19 @@ namespace Bank_Application.Services
             return new List<object>();
         }
 
+        public async Task<bool> ClientAccountExistsWithSameData(int clientId, int accountTypeId, AccountDto dto)
+        {
+            var accounts = await _repo.GetAllClientAccounts();
+            return accounts.Any(ca =>
+                ca.ClientId == clientId &&
+                ca.Account != null &&
+                ca.Account.AccountTypeId == accountTypeId &&
+                ca.Balance == dto.Balance &&
+                ca.CreatedAt == dto.CreatedAt
+            );
+        }
 
-        
+
 
 
 

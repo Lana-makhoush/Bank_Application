@@ -27,6 +27,7 @@ namespace Bank_Application.Services
         Task DeductAllFeaturesFromAccounts();
         Task UpdateClientAccountBalance(int clientAccountId, decimal newBalance);
         Task UpdateSubAccountBalance(int subAccountId, decimal newBalance);
+        Task<bool> ClientAccountExistsWithSameData(int clientId, int accountTypeId, AccountDto dto);
 
     }
 }
