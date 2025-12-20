@@ -91,7 +91,7 @@ builder.Services.AddScoped<IRecommendationStrategy, PremiumRecommendationStrateg
 builder.Services.AddScoped<IRecommendationService, RecommendationService>();
 builder.Services.AddScoped<ITransactionLogRepository, TransactionLogRepository>();
 builder.Services.AddScoped<IRecommendationRepository, RecommendationRepository>();
-
+builder.Services.AddScoped<ITransactionApprovalService, TransactionApprovalService>();
 builder.Services.AddScoped<IFeatureDecorator>(sp =>
 {
     var service = sp.GetRequiredService<FeatureService>();

@@ -9,7 +9,8 @@ namespace Bank_Application.design_pattern.Observe
         Task NotifyWithdrawalAsync(TransactionLog transaction);
         Task NotifyManagerAsync(TransactionLog transaction);
         Task NotifyTransferAsync(TransactionLog transaction);
-        Task NotifyTransferToAsync(int? ClientId, decimal Amount);
+        Task NotifyTransferToAsync(int? ClientId, decimal? Amount);
+       Task NotifyApprovedTransactionAsync(int? ClientId, string massege);
     }
 
 }

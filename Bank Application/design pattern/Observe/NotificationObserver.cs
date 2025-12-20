@@ -54,7 +54,7 @@ namespace Bank_Application.design_pattern.Observe
                   Date = transaction.TransactionDate
               });
         }
-        public async Task OnTransactionTransferToAsync(int? ClientId ,decimal Amount)
+        public async Task OnTransactionTransferToAsync(int? ClientId ,decimal? Amount)
         {
             await _hub.Clients
               .User(ClientId.ToString())
@@ -64,7 +64,18 @@ namespace Bank_Application.design_pattern.Observe
                  Date= DateTime.Now
               });
         }
+        public async Task OnTransactionApproveToAsync(int? ClientId, string massege)
+        {
+            await _hub.Clients
+              .User(ClientId.ToString())
+              .SendAsync("ReceiveNotification", new
+              {
+                  Message = massege,
+                  Date = DateTime.Now
+              });
+        }
         
+
 
     }
 

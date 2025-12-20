@@ -8,7 +8,8 @@ namespace Bank_Application.design_pattern.Observe
         Task OnTransactionCompletedWithdrawalAsync(TransactionLog transaction);
         Task OnTransactionManagerAsync(TransactionLog transaction);
         Task OnTransactionTransferAsync(TransactionLog transaction);
-        Task OnTransactionTransferToAsync(int? ClientId, decimal Amount);
+        Task OnTransactionTransferToAsync(int? ClientId, decimal? Amount);
+        Task OnTransactionApproveToAsync(int? ClientId, string massege);
     }
 
 }

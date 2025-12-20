@@ -40,13 +40,21 @@ namespace Bank_Application.design_pattern.Observe
             }
         }
 
-        public async Task NotifyTransferToAsync(int? ClientId, decimal Amount)
+        public async Task NotifyTransferToAsync(int? ClientId, decimal? Amount)
         {
             foreach (var observer in _observers)
             {
                 await observer.OnTransactionTransferToAsync( ClientId,  Amount);
             }
         }
+        public async Task NotifyApprovedTransactionAsync(int? ClientId, string massege)
+        {
+            foreach (var observer in _observers)
+            {
+                await observer.OnTransactionApproveToAsync(ClientId, massege);
+            }
+        }
+        
     }
 
 }
