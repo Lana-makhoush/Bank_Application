@@ -162,6 +162,11 @@ namespace Bank_Application.Repositories
                 .Where(a => a.ClientAccounts.Any(ca => ca.ClientId == clientId))
                 .ToListAsync();
         }
+        public async Task<ClientAccount?> GetClientAccountByAccountIdAsync(int accountId)
+        {
+            return await _context.ClientAccounts
+                .FirstOrDefaultAsync(ca => ca.AccountId == accountId);
+        }
 
     }
 }

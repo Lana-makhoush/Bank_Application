@@ -23,7 +23,10 @@ namespace Bank_Application.Services
             var account = await _accountRepo.GetAccountByIdAsync(accountId);
             if (account == null) throw new Exception("Account not found");
 
-            var composite = new AccountComposite(account.AccountId, "حساب رئيسي");
+            var clientAccount = await _accountRepo.GetClientAccountByAccountIdAsync(accountId);
+            decimal balance = clientAccount?.Balance ?? 0m;
+
+            var composite = new AccountComposite(account.AccountId, "حساب رئيسي", balance);
 
             var subAccounts = await _subAccountService.GetSubAccountsByParentAsync(accountId);
 
@@ -34,7 +37,10 @@ namespace Bank_Application.Services
                 DailyWithdrawalLimit = s.DailyWithdrawalLimit,
                 TransferLimit = s.TransferLimit,
                 UsageAreas = s.UsageAreas,
-                UserPermissions = s.UserPermissions
+                UserPermissions = s.UserPermissions,
+                Balance = s.Balance,
+                CreatedAt = s.CreatedAt,
+                StatusName = s.SubAccountStatus?.StatusName
             }).ToList();
 
             composite.LoadChildren(childrenDtos);
@@ -161,12 +167,14 @@ namespace Bank_Application.Services
             var dto = new AccountHierarchyDto
             {
                 AccountId = composite.AccountId,
-                AccountName = "حساب رئيسي",  
+                AccountName = composite.AccountName,
+                Balance = composite.Balance, 
                 SubAccounts = subAccountsDto
             };
 
             return dto;
         }
+
         //public async Task<IAccountComponent?> GetHierarchyForClientAsync(int clientId)
         //{
         //    var accounts = await _accountRepo

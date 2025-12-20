@@ -19,11 +19,13 @@ namespace Bank_Application.Repositories
         Task<Account?> GetAccountByIdAsync(int accountId);
         Task<List<Feature>> GetFeaturesByAccountType(int accountTypeId);
         Task<List<SubAccount>> GetAllSubAccounts();
-        //Task UpdateSubAccountBalance(int subAccountId, decimal newBalance);
+       
         Task UpdateClientAccountBalance(int clientAccountId, decimal newBalance);
         Task UpdateSubAccountBalance(int subAccountId, decimal newBalance);
 
         Task<List<Account>> GetAccountsWithSubAccountsByClientIdAsync(int clientId);
+        Task<ClientAccount?> GetClientAccountByAccountIdAsync(int accountId);
+
 
 
     }

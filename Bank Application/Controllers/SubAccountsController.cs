@@ -207,6 +207,7 @@ namespace Bank_Application.Controllers
 
             return Ok(accountHierarchy);
         }
+        //
         [Authorize(Roles = "User")]
         [HttpGet("my-accounts/hierarchy")]
         public async Task<IActionResult> GetMyAccountsHierarchy()

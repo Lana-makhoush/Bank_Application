@@ -24,7 +24,7 @@ namespace Bank_Application.Controllers
             _service = service;
         }
 
-        [Authorize(Roles = "Teller")]
+        //[Authorize(Roles = "Teller")]
         [HttpPost("add-account/{clientId:int}/{accountTypeId:int}/1")]
         public async Task<IActionResult> AddAccount(
      int clientId,
