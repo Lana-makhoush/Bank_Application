@@ -19,13 +19,13 @@ namespace Bank_Application.Models
 
         public int? ReceiverAccountId { get; set; }
 
-       
+
 
         //[Required(ErrorMessage = "المبلغ مطلوب")]
         [Range(0.01, double.MaxValue, ErrorMessage = "المبلغ يجب أن يكون أكبر من صفر")]
         public decimal? Amount { get; set; }
 
-        public DateTime ?TransactionDate { get; set; } = DateTime.Now;
+        public DateTime? TransactionDate { get; set; } = DateTime.Now;
 
         [StringLength(200, ErrorMessage = "الوصف  الخاص بعملية التحويل بين الحسابات يجب ألا يتجاوز 200 حرف")]
         public string? Description { get; set; }

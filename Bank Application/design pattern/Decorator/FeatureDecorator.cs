@@ -11,8 +11,10 @@ namespace Bank_Application.DesignPatterns.Decorator
             _inner = inner;
         }
 
-        public virtual Task<Feature> CreateFeature(string name, string? description = null)
-            => _inner.CreateFeature(name, description);
+        public virtual Task<Feature> CreateFeature(string name, string? description = null, decimal cost = 0)
+        {
+            return _inner.CreateFeature(name, description, cost);
+        }
 
         public virtual Task<List<Feature>> ListAllFeatures()
             => _inner.ListAllFeatures();

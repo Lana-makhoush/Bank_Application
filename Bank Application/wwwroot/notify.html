@@ -58,7 +58,7 @@
 <ul id="list"></ul>
 
 <script>
-                const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJVc2VyIiwiZXhwIjoxNzY2MjMzMjYxLCJpc3MiOiJNeUFwcCIsImF1ZCI6Ik15QXBwVXNlcnMifQ.mnAZ8l0KBAvEhIHCmoSOIVNDobqkPQyBI8_PE2gAg5A";
+                const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJVc2VyIiwiZXhwIjoxNzY2MjM5NzYwLCJpc3MiOiJNeUFwcCIsImF1ZCI6Ik15QXBwVXNlcnMifQ.wqEp-ED201uOSJ2jG156i1C5g4jkdq6sBXnbb6-r6nQ";
                 const connection = new signalR.HubConnectionBuilder()
         .withUrl("/notificationHub", {
             accessTokenFactory: () => token

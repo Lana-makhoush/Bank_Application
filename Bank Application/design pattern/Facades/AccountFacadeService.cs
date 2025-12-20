@@ -24,13 +24,15 @@ namespace Bank_Application.Services.Facade
             if (!await _service.AccountTypeExists(accountTypeId))
                 return "ACCOUNT_TYPE_NOT_FOUND";
 
-            if (await _service.ClientHasAccountType(clientId, accountTypeId))
-                return "DUPLICATE_ACCOUNT_TYPE";
+            if (await _service.ClientAccountExistsWithSameData(clientId, accountTypeId, dto))
+                return "DUPLICATE_ACCOUNT_WITH_SAME_DATA";
 
             var account = await _service.CreateAccount(accountTypeId, accountStatusId);
 
-            var clientAccount =
-                await _service.CreateClientAccount(clientId, account.AccountId!, dto);
+            var clientAccount = await _service.CreateClientAccount(clientId, account.AccountId!, dto);
+
+            var features = await _service.GetFeaturesByAccountType(accountTypeId);
+            await _service.DeductFeaturesFromAccount(clientAccount, features);
 
             return clientAccount;
         }

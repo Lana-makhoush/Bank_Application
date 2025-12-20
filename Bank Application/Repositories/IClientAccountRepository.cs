@@ -12,5 +12,6 @@ namespace Bank_Application.Repositories
 
         Task<(bool Success, string Message)> FreezeAccountAsync(int id);
 
+
     }
 }

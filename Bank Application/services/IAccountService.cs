@@ -16,7 +16,18 @@ namespace Bank_Application.Services
         Task<bool> ClientHasAccountType(int clientId, int accountTypeId);
         Task<ClientAccount?> UpdateAccount(int clientAccountId, int newAccountTypeId, UpdateAccountDto dto);
 
+
         Task<ClientAccount?> GetClientAccountById(int clientAccountId);
         Task<List<ClientAccount>> GetAllClientAccounts();
+        Task<List<Feature>> GetFeaturesByAccountType(int accountTypeId);
+        Task<List<SubAccount>> GetAllSubAccounts();
+        Task<List<object>> DeductFeaturesFromAccount(ClientAccount clientAccount, List<Feature> features);
+        Task<List<object>> DeductFeaturesFromSubAccount(SubAccount subAccount, List<Feature> features);
+
+        Task DeductAllFeaturesFromAccounts();
+        Task UpdateClientAccountBalance(int clientAccountId, decimal newBalance);
+        Task UpdateSubAccountBalance(int subAccountId, decimal newBalance);
+        Task<bool> ClientAccountExistsWithSameData(int clientId, int accountTypeId, AccountDto dto);
+
     }
 }

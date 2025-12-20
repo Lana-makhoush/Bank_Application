@@ -23,7 +23,10 @@ namespace Bank_Application.Services
             var account = await _accountRepo.GetAccountByIdAsync(accountId);
             if (account == null) throw new Exception("Account not found");
 
-            var composite = new AccountComposite(account.AccountId, "حساب رئيسي");
+            var clientAccount = await _accountRepo.GetClientAccountByAccountIdAsync(accountId);
+            decimal balance = clientAccount?.Balance ?? 0m;
+
+            var composite = new AccountComposite(account.AccountId, "حساب رئيسي", balance);
 
             var subAccounts = await _subAccountService.GetSubAccountsByParentAsync(accountId);
 
@@ -34,7 +37,10 @@ namespace Bank_Application.Services
                 DailyWithdrawalLimit = s.DailyWithdrawalLimit,
                 TransferLimit = s.TransferLimit,
                 UsageAreas = s.UsageAreas,
-                UserPermissions = s.UserPermissions
+                UserPermissions = s.UserPermissions,
+                Balance = s.Balance,
+                CreatedAt = s.CreatedAt,
+                StatusName = s.SubAccountStatus?.StatusName
             }).ToList();
 
             composite.LoadChildren(childrenDtos);
@@ -45,9 +51,16 @@ namespace Bank_Application.Services
 
 
 
-        public async Task<SubAccountResponseDto> AddSubAccountToAccountAsync(SubAccountCreateDto dto, int statusId)
+        public async Task<SubAccountResponseDto> AddSubAccountToAccountAsync(
+      SubAccountCreateDto dto,
+      int statusId,
+      int subAccountTypeId)
         {
-            var created = await _subAccountService.CreateSubAccountAsync(dto, statusId);
+            var created = await _subAccountService.CreateSubAccountAsync(
+                dto,
+                statusId,
+                subAccountTypeId
+            );
 
             return new SubAccountResponseDto
             {
@@ -66,11 +79,12 @@ namespace Bank_Application.Services
 
 
         public async Task<SubAccountResponseDto?> UpdateSubAccountOnAccountAsync(
-     int subAccountId,
-     int statusId,
-     SubAccountUpdateDto dto)
+       int subAccountId,
+       int statusId,
+       SubAccountUpdateDto dto,
+       int subAccountTypeId) // أضف المعامل الجديد
         {
-            var updated = await _subAccountService.UpdateSubAccountAsync(subAccountId, statusId, dto);
+            var updated = await _subAccountService.UpdateSubAccountAsync(subAccountId, statusId, dto, subAccountTypeId);
 
             if (updated == null) return null;
 
@@ -92,10 +106,12 @@ namespace Bank_Application.Services
         {
             return await _subAccountService.DeleteSubAccountAsync(subAccountId);
         }
-        public async Task<SubAccountResponseDto?> UpdateSubAccountOnAccountAsync(int subAccountId, SubAccountUpdateDto dto)
+        public async Task<SubAccountResponseDto?> UpdateSubAccountOnAccountAsync(int subAccountId, SubAccountUpdateDto dto, int subAccountTypeId)
         {
             int statusId = 1;
-            var updated = await _subAccountService.UpdateSubAccountAsync(subAccountId, statusId, dto);
+
+            var updated = await _subAccountService.UpdateSubAccountAsync(subAccountId, statusId, dto, subAccountTypeId);
+
             if (updated == null) return null;
 
             return new SubAccountResponseDto
@@ -110,6 +126,7 @@ namespace Bank_Application.Services
                 CreatedAt = updated.CreatedAt,
             };
         }
+
         public async Task<SubAccountResponseDto?> GetSubAccountByIdAsync(int subAccountId)
 {
     var sub = await _subAccountService.GetSubAccountByIdAsync(subAccountId);
@@ -150,12 +167,54 @@ namespace Bank_Application.Services
             var dto = new AccountHierarchyDto
             {
                 AccountId = composite.AccountId,
-                AccountName = "حساب رئيسي",  
+                AccountName = composite.AccountName,
+                Balance = composite.Balance, 
                 SubAccounts = subAccountsDto
             };
 
             return dto;
         }
+
+        //public async Task<IAccountComponent?> GetHierarchyForClientAsync(int clientId)
+        //{
+        //    var accounts = await _accountRepo
+        //        .GetAccountsWithSubAccountsByClientIdAsync(clientId);
+
+        //    if (accounts == null || !accounts.Any())
+        //        return null;
+
+        //    var root = new AccountComposite(null, "حسابات العميل");
+
+        //    foreach (var account in accounts)
+        //    {
+        //        var accountNode = new AccountComposite(
+        //            account.AccountId,
+        //            account.AccountType?.TypeName
+        //        );
+
+        //        foreach (var sub in account.SubAccounts)
+        //        {
+        //            var dto = new SubAccountResponseDto
+        //            {
+        //                SubAccountId = sub.SubAccountId,
+        //                ParentAccountId = sub.ParentAccountId ?? 0,
+        //                Balance = sub.Balance,
+        //                DailyWithdrawalLimit = sub.DailyWithdrawalLimit,
+        //                TransferLimit = sub.TransferLimit,
+        //                UsageAreas = sub.UsageAreas,
+        //                UserPermissions = sub.UserPermissions,
+        //                CreatedAt = sub.CreatedAt,
+        //                StatusName = sub.SubAccountStatus?.StatusName
+        //            };
+
+        //            accountNode.AddChild(new SubAccountLeaf(dto));
+        //        }
+
+        //        root.AddChild(accountNode);
+        //    }
+
+        //    return root;
+        //}
 
 
     }

@@ -2,7 +2,9 @@
 using Bank_Application.Patterns.Composite;
 using Bank_Application.Repositories;
 using Bank_Application.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Bank_Application.Controllers
 {
@@ -21,10 +23,15 @@ namespace Bank_Application.Controllers
             _accountHierarchyService = accountHierarchyService;
         }
 
-       
 
-        [HttpPost("{accountId}/{statusId}/Add_Sub_Account")]
-        public async Task<IActionResult> Create(int accountId, int statusId, [FromForm] SubAccountCreateDto dto)
+        [Authorize(Roles = "Manager,Teller")]
+
+        [HttpPost("{accountId:int}/{statusId:int}/{subAccountTypeId:int}/Add_Sub_Account")]
+        public async Task<IActionResult> Create(
+     int accountId,
+     int statusId,
+     int subAccountTypeId,
+     [FromForm] SubAccountCreateDto dto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -33,7 +40,11 @@ namespace Bank_Application.Controllers
 
             try
             {
-                var created = await _subAccountService.CreateSubAccountAsync(dto, statusId);
+                var created = await _subAccountService.CreateSubAccountAsync(
+                    dto,
+                    statusId,
+                    subAccountTypeId
+                );
 
                 var response = new SubAccountResponseDto
                 {
@@ -45,7 +56,7 @@ namespace Bank_Application.Controllers
                     UserPermissions = created.UserPermissions,
                     Balance = created.Balance,
                     CreatedAt = created.CreatedAt,
-                    StatusName = created.SubAccountStatus?.StatusName 
+                    StatusName = created.SubAccountStatus?.StatusName
                 };
 
                 return StatusCode(201, new
@@ -57,27 +68,49 @@ namespace Bank_Application.Controllers
             }
             catch (InvalidOperationException ex)
             {
-                return Conflict(new { StatusCode = 409, Message = ex.Message });
+                return Conflict(new
+                {
+                    StatusCode = 409,
+                    Message = ex.Message
+                });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { StatusCode = 500, Message = "خطأ: " + ex.Message });
+                return StatusCode(500, new
+                {
+                    StatusCode = 500,
+                    Message = "خطأ: " + ex.Message
+                });
             }
         }
 
-        [HttpPut("{subAccountId}/{statusId}/Update_Sub_Account")]
-        public async Task<IActionResult> Update(int subAccountId, int statusId, [FromForm] SubAccountUpdateDto dto)
+        [Authorize(Roles = "Manager,Teler")]
+
+        [HttpPut("{subAccountId}/{statusId}/{subAccountTypeId}/Update_Sub_Account")]
+        public async Task<IActionResult> Update(
+    int subAccountId,
+    int statusId,
+    int subAccountTypeId,
+    [FromForm] SubAccountUpdateDto dto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             try
             {
-                var updated = await _subAccountService.UpdateSubAccountAsync(subAccountId, statusId, dto);
+                var updated = await _subAccountService.UpdateSubAccountAsync(
+                    subAccountId,
+                    statusId,
+                    dto,
+                    subAccountTypeId
+                );
 
                 if (updated == null)
                     return NotFound(new { StatusCode = 404, Message = "الحساب الفرعي غير موجود" });
 
                 var response = new SubAccountResponseDto
                 {
-                    SubAccountId = updated.SubAccountId ,
+                    SubAccountId = updated.SubAccountId,
                     ParentAccountId = updated.ParentAccountId ?? 0,
                     DailyWithdrawalLimit = updated.DailyWithdrawalLimit,
                     TransferLimit = updated.TransferLimit,
@@ -95,12 +128,18 @@ namespace Bank_Application.Controllers
                     Data = response
                 });
             }
+            catch (InvalidOperationException ex)
+            {
+                return Conflict(new { StatusCode = 409, Message = ex.Message });
+            }
             catch (Exception ex)
             {
-                return StatusCode(500, new { StatusCode = 500, Message = ex.Message });
+                return StatusCode(500, new { StatusCode = 500, Message = "خطأ: " + ex.Message });
             }
         }
 
+
+        [Authorize(Roles = "Manager,Teller")]
 
         [HttpDelete("Delete_sub_Account/{id}")]
         public async Task<IActionResult> Delete(int id)
@@ -121,7 +160,8 @@ namespace Bank_Application.Controllers
                 
             });
         }
-        
+        [Authorize(Roles = "Manager,Teller")]
+
         [HttpGet("Get_Sub_Account/{id}")]
         public async Task<IActionResult> GetSubAccountById(int id)
         {
@@ -141,6 +181,8 @@ namespace Bank_Application.Controllers
                 Data = sub
             });
         }
+        [Authorize(Roles = "Manager,Teller")]
+
         [HttpGet("Get_All_Sub_Accounts")]
         public async Task<IActionResult> GetAll()
         {
@@ -153,6 +195,7 @@ namespace Bank_Application.Controllers
                 Data = list
             });
         }
+        [Authorize(Roles = "Manager,Teller")]
         [HttpGet("{accountId}/hierarchy")]
         public async Task<IActionResult> GetAccountHierarchy(int accountId)
         {
@@ -164,5 +207,44 @@ namespace Bank_Application.Controllers
 
             return Ok(accountHierarchy);
         }
+        
+        [Authorize(Roles = "User")]
+        [HttpGet("my-accounts/hierarchy")]
+        public async Task<IActionResult> GetMyAccountsHierarchy()
+        {
+            var clientIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (clientIdClaim == null)
+                return Unauthorized(new { message = "المعرف غير موجود في التوكن" });
+
+            int clientId = int.Parse(clientIdClaim.Value);
+
+            var clientAccounts = await _accountRepository
+                .GetAccountsWithSubAccountsByClientIdAsync(clientId);
+
+            if (clientAccounts == null || !clientAccounts.Any())
+                return NotFound(new { message = "لا يوجد حسابات مرتبطة بهذا العميل" });
+
+            var result = new List<AccountHierarchyDto>();
+
+            foreach (var account in clientAccounts)
+            {
+                var hierarchy = await _accountHierarchyService
+                    .GetAccountHierarchyAsync(account.AccountId);
+
+                if (hierarchy != null)
+                    result.Add(hierarchy);
+            }
+
+            return Ok(new
+            {
+                StatusCode = 200,
+                Message = "تم جلب التسلسل الهرمي لحسابات العميل بنجاح",
+                Data = result
+            });
+        }
+
+
+
     }
 }

@@ -17,6 +17,7 @@ namespace Bank_Application.Controllers
         {
             _facade = facade;
         }
+        [Authorize(Roles = "Manager,Teller")]
 
         [HttpPost("add")]
         public async Task<IActionResult> AddClient([FromForm] ClientDto dto)

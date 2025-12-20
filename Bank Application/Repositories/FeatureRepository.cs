@@ -20,7 +20,7 @@ namespace Bank_Application.Repositories
 
         public async Task<Feature> AddFeature(Feature feature)
         {
-            _context.Features.Add(feature);
+            _context.Features.Add(feature); 
             await _context.SaveChangesAsync();
             return feature;
         }

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bank_Application.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251219212644__Initial")]
+    [Migration("20251220125623__Initial")]
     partial class _Initial
     {
         /// <inheritdoc />
@@ -202,7 +202,10 @@ namespace Bank_Application.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.HasKey("ClientId", "AccountId");
 
@@ -278,6 +281,9 @@ namespace Bank_Application.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("FeatureId"));
 
+                    b.Property<decimal>("Cost")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("Description")
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
@@ -290,6 +296,31 @@ namespace Bank_Application.Migrations
                     b.HasKey("FeatureId");
 
                     b.ToTable("Features");
+                });
+
+            modelBuilder.Entity("Bank_Application.Models.Recommendation", b =>
+                {
+                    b.Property<int>("RecommendationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RecommendationId"));
+
+                    b.Property<int>("ClientId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RecommendationId");
+
+                    b.HasIndex("ClientId");
+
+                    b.ToTable("Recommendations");
                 });
 
             modelBuilder.Entity("Bank_Application.Models.Report", b =>
@@ -631,6 +662,17 @@ namespace Bank_Application.Migrations
                     b.Navigation("Client");
                 });
 
+            modelBuilder.Entity("Bank_Application.Models.Recommendation", b =>
+                {
+                    b.HasOne("Bank_Application.Models.Client", "Client")
+                        .WithMany("Recommendations")
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Client");
+                });
+
             modelBuilder.Entity("Bank_Application.Models.Report", b =>
                 {
                     b.HasOne("Bank_Application.Models.Employee", "Employee")
@@ -765,6 +807,8 @@ namespace Bank_Application.Migrations
 
             modelBuilder.Entity("Bank_Application.Models.Client", b =>
                 {
+                    b.Navigation("Recommendations");
+
                     b.Navigation("SupportTickets");
 
                     b.Navigation("TransactionLogs");

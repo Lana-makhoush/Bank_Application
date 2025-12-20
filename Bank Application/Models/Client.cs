@@ -68,6 +68,7 @@ namespace Bank_Application.Models
         public bool IsVerified { get; set; } = false;
         public ICollection<SupportTicket>? SupportTickets { get; set; }
         public ICollection<TransactionLog>? TransactionLogs { get; set; }
+        public ICollection<Recommendation>? Recommendations { get; set; }
 
 
     }

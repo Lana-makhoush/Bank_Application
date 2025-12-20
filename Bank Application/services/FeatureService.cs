@@ -12,8 +12,18 @@ namespace Bank_Application.DesignPatterns.Decorator
             _repo = repo;
         }
 
-        public Task<Feature> CreateFeature(string name, string? description = null)
-            => _repo.AddFeature(new Feature { FeatureName = name, Description = description });
+        public Task<Feature> CreateFeature(string name, string? description = null, decimal cost = 0)
+        {
+            var feature = new Feature
+            {
+                FeatureName = name,
+                Description = description,
+                Cost = cost 
+            };
+
+            return _repo.AddFeature(feature);
+        }
+
 
         public Task<List<Feature>> ListAllFeatures()
             => _repo.GetAllFeatures();

@@ -9,11 +9,12 @@ namespace Bank_Application.Patterns.Composite
         public string? AccountName { get; private set; }
 
         private readonly List<IAccountComponent> _children = new();
-
-        public AccountComposite(int? accountId, string? accountName)
+        public decimal Balance { get; private set; }
+        public AccountComposite(int? accountId, string? accountName, decimal balance = 0m)
         {
             AccountId = accountId;
             AccountName = accountName;
+            Balance = balance;
         }
 
         public void AddChild(IAccountComponent child)

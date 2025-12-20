@@ -7,4 +7,8 @@ public class FeatureCreateDto
     [Required(ErrorMessage = "حقل الوصف مطلوب")]
 
     public string? Description { get; set; }
+    [Required(ErrorMessage = "حقل الكلفة مطلوب")]
+
+    [Range(0, double.MaxValue, ErrorMessage = "المبلغ يجب أن يكون رقمًا موجبًا")]
+    public decimal Cost { get; set; }
 }

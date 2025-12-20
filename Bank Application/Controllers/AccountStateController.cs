@@ -1,4 +1,5 @@
 ﻿using Bank_Application.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -16,7 +17,7 @@ namespace Bank_Application.Controllers
             _clientRepo = clientRepo;
             _subRepo = subRepo;
         }
-
+        [Authorize(Roles = "Teller,Manager")]
         [HttpPost("close/client/{id}")]
         public async Task<IActionResult> CloseClientAccount(int id)
         {
@@ -26,7 +27,7 @@ namespace Bank_Application.Controllers
 
             return Ok(new { status = 200, message = result.Message });
         }
-
+        [Authorize(Roles = "Teller,Manager")]
         [HttpPost("activate/client/{id}")]
         public async Task<IActionResult> ActivateClientAccount(int id)
         {
@@ -36,7 +37,7 @@ namespace Bank_Application.Controllers
 
             return Ok(new { status = 200, message = result.Message });
         }
-//
+        [Authorize(Roles = "Teller,Manager")]
         [HttpPost("close/sub/{id}")]
         public async Task<IActionResult> CloseSubAccount(int id)
         {
@@ -46,7 +47,7 @@ namespace Bank_Application.Controllers
 
             return Ok(new { status = 200, message = result.Message });
         }
-
+        [Authorize(Roles = "Teller,Manager")]
         [HttpPost("activate/sub/{id}")]
         public async Task<IActionResult> ActivateSubAccount(int id)
         {
@@ -56,7 +57,7 @@ namespace Bank_Application.Controllers
 
             return Ok(new { status = 200, message = result.Message });
         }
-
+        [Authorize(Roles = "Teller,Manager")]
         [HttpPost("suspend/client/{id}")]
         public async Task<IActionResult> SuspendClientAccount(int id)
         {
@@ -64,7 +65,7 @@ namespace Bank_Application.Controllers
             if (!result.Success) return Conflict(new { status = 409, message = result.Message });
             return Ok(new { status = 200, message = result.Message });
         }
-
+        [Authorize(Roles = "Teller,Manager")]
         [HttpPost("freeze/client/{id}")]
         public async Task<IActionResult> FreezeClientAccount(int id)
         {
@@ -72,6 +73,7 @@ namespace Bank_Application.Controllers
             if (!result.Success) return Conflict(new { status = 409, message = result.Message });
             return Ok(new { status = 200, message = result.Message });
         }
+        [Authorize(Roles = "Teller,Manager")]
         [HttpPost("suspend/sub/{id}")]
         public async Task<IActionResult> SuspendSubAccount(int id)
         {
@@ -82,7 +84,7 @@ namespace Bank_Application.Controllers
             return Ok(new { status = 200, message = result.Message });
         }
 
-
+        [Authorize(Roles = "Teller,Manager")]
         [HttpPost("freeze/sub/{id}")]
         public async Task<IActionResult> FreezeSubAccount(int id)
         {

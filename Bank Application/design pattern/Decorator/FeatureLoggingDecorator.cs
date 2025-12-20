@@ -15,12 +15,13 @@ namespace Bank_Application.DesignPatterns.Decorator
             _logger = logger;
         }
 
-        public override async Task<Feature> CreateFeature(string name, string? description = null)
+        public override async Task<Feature> CreateFeature(string name, string? description = null, decimal cost = 0)
         {
-            _logger.LogInformation($"Creating feature: {name}");
-            var result = await base.CreateFeature(name, description);
+            _logger.LogInformation($"Creating feature: {name} with cost: {cost}");
+            var result = await base.CreateFeature(name, description, cost);
             _logger.LogInformation($"Created feature ID = {result.FeatureId}");
             return result;
         }
+
     }
 }

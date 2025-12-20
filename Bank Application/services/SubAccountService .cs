@@ -13,17 +13,22 @@ public class SubAccountService : ISubAccountService
         _repo = repo;
     }
 
-    public async Task<SubAccount> CreateSubAccountAsync(SubAccountCreateDto dto, int statusId)
+    public async Task<SubAccount> CreateSubAccountAsync(
+    SubAccountCreateDto dto,
+    int statusId,
+    int subAccountTypeId)
+
     {
         var parentExists = await _repo.ParentAccountExistsAsync(dto.ParentAccountId);
-        if (!parentExists)
-            throw new InvalidOperationException("الحساب الرئيسي غير موجود");
-
-        if (dto.DailyWithdrawalLimit == null)
-            throw new InvalidOperationException("حد السحب اليومي مطلوب");
-
-        if (dto.TransferLimit == null)
-            throw new InvalidOperationException("حد التحويل مطلوب");
+        if (await _repo.ExistsAsync(
+         dto.ParentAccountId,
+         dto.DailyWithdrawalLimit,
+         dto.TransferLimit,
+         dto.UsageAreas,
+         dto.UserPermissions))
+        {
+            throw new InvalidOperationException("حساب فرعي مطابق موجود مسبقًا");
+        }
 
         var sub = new SubAccount
         {
@@ -34,8 +39,12 @@ public class SubAccountService : ISubAccountService
             UserPermissions = dto.UserPermissions,
             Balance = dto.Balance,
             CreatedAt = dto.CreatedAt,
-            SubAccountStatusId = statusId
+            SubAccountStatusId = statusId,
+
+           
+            SubAccountTypeId = subAccountTypeId
         };
+
 
         var created = await _repo.CreateAsync(sub);
 
@@ -44,7 +53,12 @@ public class SubAccountService : ISubAccountService
         return created;
     }
 
-    public async Task<SubAccount?> UpdateSubAccountAsync(int subAccountId, int statusId, SubAccountUpdateDto dto)
+    public async Task<SubAccount?> UpdateSubAccountAsync(
+     int subAccountId,
+     int statusId,
+     SubAccountUpdateDto dto,
+     int subAccountTypeId // أضفنا المعامل هنا
+ )
     {
         var sub = await _repo.GetByIdAsync(subAccountId);
         if (sub == null)
@@ -83,10 +97,9 @@ public class SubAccountService : ISubAccountService
         if (dto.CreatedAt.HasValue)
             sub.CreatedAt = dto.CreatedAt.Value;
 
-       
-        
-
         sub.SubAccountStatusId = statusId;
+
+        sub.SubAccountTypeId = subAccountTypeId;
 
         var updated = await _repo.UpdateAsync(sub);
 
@@ -94,6 +107,7 @@ public class SubAccountService : ISubAccountService
 
         return updated;
     }
+
 
 
 

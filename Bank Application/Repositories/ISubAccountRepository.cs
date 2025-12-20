@@ -16,5 +16,8 @@ public interface ISubAccountRepository
     Task<(bool Success, string Message)> ActivateSubAccountAsync(int subAccountId);
     Task<(bool Success, string Message)> SuspendSubAccountAsync(int subAccountId);
     Task<(bool Success, string Message)> FreezeSubAccountAsync(int subAccountId);
+    Task<List<Account>> GetAccountsWithSubAccountsByClientIdAsync(int clientId);
+    Task<List<SubAccount>> GetByAccountIdAsync(int accountId);
+
 
 }
