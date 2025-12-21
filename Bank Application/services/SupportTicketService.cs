@@ -1,4 +1,5 @@
-﻿using Bank_Application.Models;
+﻿using Bank_Application.Hubs;
+using Bank_Application.Models;
 using Bank_Application.Repositories;
 using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;

@@ -1,7 +1,12 @@
 using Bank_Application.Data;
+
+using Bank_Application.design_pattern.Observe;
+using Bank_Application.DesignPatterns;
+
 using Bank_Application.DesignPatterns.Decorator;
 using Bank_Application.Facade;
 using Bank_Application.Factories;
+using Bank_Application.Hubs;
 using Bank_Application.Models;
 using Bank_Application.Repositories;
 using Bank_Application.Seeders;
@@ -13,7 +18,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -49,9 +56,24 @@ builder.Services.AddScoped<ISubAccountService, SubAccountService>();
 builder.Services.AddScoped<IAccountHierarchyService, AccountHierarchyService>();
 builder.Services.AddScoped<ISupportTicketService, SupportTicketService>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+
+builder.Services.AddScoped<ITransactionService,TransactionService>();
+builder.Services.AddScoped<IAccountResolverService, AccountResolverService>();
+builder.Services.AddScoped<FeatureService>();
+
 builder.Services.AddScoped<IRecommendationService, RecommendationService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+
 builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<ITransactionSubject, TransactionNotifier>();
+builder.Services.AddScoped<ITransactionObserver, NotificationObserver>();
+builder.Services.AddScoped<IAccountTransactionRepository, AccountTransactionRepository>();
+builder.Services.AddScoped<IClientAccountTransactionRepository, ClientAccountTransactionRepository>();
+builder.Services.AddScoped<ITransactionLogRepository, TransactionLogRepository>();
+
+builder.Services.AddSignalR();
 
 builder.Services.AddScoped<IAccountTypeFacade, AccountTypeFacade>();
 builder.Services.AddScoped<IClientFacade, ClientFacade>();
@@ -69,7 +91,7 @@ builder.Services.AddScoped<IRecommendationStrategy, PremiumRecommendationStrateg
 builder.Services.AddScoped<IRecommendationService, RecommendationService>();
 builder.Services.AddScoped<ITransactionLogRepository, TransactionLogRepository>();
 builder.Services.AddScoped<IRecommendationRepository, RecommendationRepository>();
-
+builder.Services.AddScoped<ITransactionApprovalService, TransactionApprovalService>();
 builder.Services.AddScoped<IFeatureDecorator>(sp =>
 {
     var service = sp.GetRequiredService<FeatureService>();
@@ -100,6 +122,22 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(key),
             ValidateLifetime = true
         };
+        opt.Events = new JwtBearerEvents
+        {
+
+            OnMessageReceived = context =>
+            {
+                var accessToken = context.Request.Query["access_token"];
+                if (!string.IsNullOrEmpty(accessToken) &&
+                    (context.HttpContext.Request.Path.StartsWithSegments("/notificationHub") ))
+                   
+
+                {
+                    context.Token = accessToken;
+                }
+                return Task.CompletedTask;
+            }
+        };
     });
 
 builder.Services.AddRateLimiter(options =>
@@ -111,6 +149,12 @@ builder.Services.AddRateLimiter(options =>
         config.QueueLimit = 0;
     });
 });
+
+builder.Services.AddAuthorization();
+builder.Services.AddControllers();
+builder.Services.AddScoped<IPasswordHasher<Employee>, PasswordHasher<Employee>>();
+builder.Services.AddSignalR();
+
 
 builder.Services.AddSignalR();
 
@@ -127,6 +171,7 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddAuthorization();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -151,10 +196,38 @@ using (var scope = app.Services.CreateScope())
     EmployeeSeeder.Seed(context);
 }
 
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    EmployeeSeeder.Seed(db);
+   
+}
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+
+   
+    TransactionTypeSeeder.Seed(context);
+}
+
+
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//
+app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseRateLimiter();
+app.UseAuthentication();
+app.UseAuthorization();
+app.UseStaticFiles();
+
+
+app.MapControllers();
+app.MapHub<NotificationHub>("/notificationHub");
 
 app.Run();

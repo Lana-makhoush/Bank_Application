@@ -70,7 +70,7 @@ namespace Bank_Application.Controllers
                 message = "تم حذف نوع الحساب بنجاح"
             });
         }
-        [Authorize(Roles = "Manager,Admin")]
+        [Authorize(Roles = "Manager,Admin,Teller")]
 
         [HttpGet("all")]
         public IActionResult GetAll()
@@ -83,7 +83,7 @@ namespace Bank_Application.Controllers
                 data = result
             });
         }
-        [Authorize(Roles = "Manager,Admin")]
+        [Authorize(Roles = "Manager,Admin,Teller")]
 
         [HttpGet("{id}")]
         public IActionResult GetById(int id)

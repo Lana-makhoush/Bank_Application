@@ -1,21 +1,25 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
-
-public class NotificationHub : Hub
+namespace Bank_Application.Hubs
 {
-    public override async Task OnConnectedAsync()
+
+    public class NotificationHub : Hub
     {
-        var httpContext = Context.GetHttpContext();
-        var clientId = httpContext?.Request.Query["clientId"].ToString();
-
-        if (!string.IsNullOrEmpty(clientId))
+        public override async Task OnConnectedAsync()
         {
-            await Groups.AddToGroupAsync(
-                Context.ConnectionId,
-                $"Client_{clientId}"
-            );
-        }
+            var httpContext = Context.GetHttpContext();
+            var clientId = httpContext?.Request.Query["clientId"].ToString();
 
-        await base.OnConnectedAsync();
+            if (!string.IsNullOrEmpty(clientId))
+            {
+                await Groups.AddToGroupAsync(
+                    Context.ConnectionId,
+                    $"Client_{clientId}"
+                );
+            }
+
+            await base.OnConnectedAsync();
+        }
     }
 }
+

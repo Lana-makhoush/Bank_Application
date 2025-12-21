@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>SignalR Notifications</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+    <style>
+        body {
+            font-family: Arial;
+            direction: rtl;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #eef;
+            border-radius: 5px;
+        }
+
+        .date {
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>🔔 Notifications</h2>
+    <ul id="list"></ul>
+
+    <script>
+        const token = "<!DOCTYPE html>""
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>SignalR Notifications</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+    <style>
+        body {
+            font-family: Arial;
+            direction: rtl;
+        }
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #eef;
+            border-radius: 5px;
+        }
+        .date {
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<h2>🔔 Notifications</h2>
+<ul id="list"></ul>
+
+<script>
+                const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJVc2VyIiwiZXhwIjoxNzY2MjM5NzYwLCJpc3MiOiJNeUFwcCIsImF1ZCI6Ik15QXBwVXNlcnMifQ.wqEp-ED201uOSJ2jG156i1C5g4jkdq6sBXnbb6-r6nQ";
+                const connection = new signalR.HubConnectionBuilder()
+        .withUrl("/notificationHub", {
+            accessTokenFactory: () => token
+        })
+        .withAutomaticReconnect()
+        .build();
+
+    connection.on("ReceiveNotification", data => {
+
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+            <div>${data.message}</div>
+            <div class="date">${new Date(data.date).toLocaleString()}</div>
+        `;
+
+        document.getElementById("list").prepend(li);
+    });
+
+    connection.start()
+        .then(() => console.log("✅ Connected to NotificationHub"))
+        .catch(err => console.error("❌ SignalR Error:", err));
+</script>
+
+</body>
+</html>
+";
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/notificationHub", {
+                accessTokenFactory: () => token
+            })
+            .withAutomaticReconnect()
+            .build();
+
+        connection.on("ReceiveNotification", data => {
+
+            const li = document.createElement("li");
+
+            li.innerHTML = `
+                <div>${data.message}</div>
+                <div class="date">${new Date(data.date).toLocaleString()}</div>
+            `;
+
+            document.getElementById("list").prepend(li);
+        });
+
+        connection.start()
+            .then(() => console.log("✅ Connected to NotificationHub"))
+            .catch(err => console.error("❌ SignalR Error:", err));
+    </script>
+
+</body>
+</html>

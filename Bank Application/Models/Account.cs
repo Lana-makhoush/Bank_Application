@@ -16,7 +16,7 @@ namespace Bank_Application.Models
         public Account? ParentAccount { get; set; }
         public ICollection<Account>? SubAccounts { get; set; }
         public ICollection<ScheduledTransaction>? ScheduledTransactions { get; set; }
-        public ICollection<TransactionLog>? ReceivedTransactions { get; set; }
+        
 
     }
 }

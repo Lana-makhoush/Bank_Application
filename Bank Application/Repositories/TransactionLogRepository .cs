@@ -20,7 +20,12 @@ namespace Bank_Application.Repositories
         {
             return await _context.TransactionLogs
                 .Where(t => t.ClientId == clientId)
-                .ToListAsync();
+            .ToListAsync();
+        }
+        public async Task AddAsync(TransactionLog log)
+        {
+            _context.TransactionLogs.Add(log);
+            await _context.SaveChangesAsync();
         }
     }
 
