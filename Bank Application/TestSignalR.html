@@ -10,7 +10,7 @@
 
     <script>
         const connection = new signalR.HubConnectionBuilder()
-            .withUrl("https://localhost:5001/supportTicketHub") // رابط السيرفر ASP.NET Core
+            .withUrl("https://localhost:5001/supportTicketHub") 
             .build();
 
         connection.on("ReceiveReply", function(replyText) {
