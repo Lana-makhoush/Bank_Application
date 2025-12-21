@@ -24,7 +24,7 @@ namespace Bank_Application.Controllers
             _service = service;
         }
 
-        [Authorize(Roles = "Teller")]
+        [Authorize(Roles = "Teller,Manager")]
         [HttpPost("add-account/{clientId:int}/{accountTypeId:int}/1")]
         public async Task<IActionResult> AddAccount(
      int clientId,
@@ -88,7 +88,7 @@ namespace Bank_Application.Controllers
         }
 
 
-        [Authorize(Roles = "Teller")]
+        [Authorize(Roles = "Teller,Manager")]
         [HttpGet("GetAccountByClientAccountId/{clientAccountId}")]
         public async Task<IActionResult> GetAccountByClientAccountId(int clientAccountId)
         {
