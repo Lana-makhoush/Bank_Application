@@ -28,7 +28,6 @@ namespace Bank_Application.Repositories
             if (account == null)
                 return (false, "الحساب غير موجود");
 
-            // تحقق من المعاملات المجدولة النشطة
             var hasActiveTransactions = await _context.ScheduledTransactions
                 .AnyAsync(st => st.AccountId == account.AccountId && st.IsActive == true);
 
@@ -38,9 +37,8 @@ namespace Bank_Application.Repositories
             var context = new AccountContext(account);
             context.Close();
 
-            // تحديث معرف حالة الحساب
             if (account.Account != null)
-                account.Account.AccountStatusId = 4; // مغلق
+                account.Account.AccountStatusId = 4;
 
             await _context.SaveChangesAsync();
             return (true, "تم غلق الحساب الرئيسي وتصفير الرصيد");
@@ -83,7 +81,12 @@ namespace Bank_Application.Repositories
             await _context.SaveChangesAsync();
             return (true, "تم تجميد الحساب الرئيسي");
         }
-
+        public async Task<List<AccountStatus>> GetAllAsync()
+        {
+            return await _context.AccountStatuses
+                .AsNoTracking()
+                .ToListAsync();
+        }
     }
 
 }

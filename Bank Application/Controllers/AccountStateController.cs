@@ -97,6 +97,23 @@ namespace Bank_Application.Controllers
 
 
         }
+        [Authorize(Roles = "Teller,Manager")]
+        [HttpGet]
+        public async Task<IActionResult> GetAllAccountStatuses()
+        {
+            var statuses = (await _clientRepo.GetAllAsync())
+                .Select(s => new
+                {
+                    accountStatusId = s.AccountStatusId,
+                    statusName = s.StatusName
+                });
+
+            return Ok(new
+            {
+                status = 200,
+                data = statuses
+            });
+        }
 
     }
 }
