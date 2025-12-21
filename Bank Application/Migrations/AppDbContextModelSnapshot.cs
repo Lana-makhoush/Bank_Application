@@ -295,6 +295,50 @@ namespace Bank_Application.Migrations
                     b.ToTable("Features");
                 });
 
+            modelBuilder.Entity("Bank_Application.Models.Loan", b =>
+                {
+                    b.Property<int>("LoanId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LoanId"));
+
+                    b.Property<int?>("AccountId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DurationInMonths")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("MonthlyInstallment")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("NextPaymentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal?>("RemainingAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("SubAccountId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("LoanId");
+
+                    b.HasIndex("AccountId");
+
+                    b.HasIndex("SubAccountId");
+
+                    b.ToTable("Loans");
+                });
+
             modelBuilder.Entity("Bank_Application.Models.Recommendation", b =>
                 {
                     b.Property<int>("RecommendationId")
@@ -377,8 +421,10 @@ namespace Bank_Application.Migrations
                     b.Property<bool?>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime?>("NextExecutionDate")
-                        .IsRequired()
+                    b.Property<int?>("LoanId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("NextExecutionDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("RecurrenceType")
@@ -391,6 +437,8 @@ namespace Bank_Application.Migrations
                     b.HasKey("ScheduledTransactionId");
 
                     b.HasIndex("AccountId");
+
+                    b.HasIndex("LoanId");
 
                     b.HasIndex("SubAccountId");
 
@@ -659,6 +707,21 @@ namespace Bank_Application.Migrations
                     b.Navigation("Client");
                 });
 
+            modelBuilder.Entity("Bank_Application.Models.Loan", b =>
+                {
+                    b.HasOne("Bank_Application.Models.Account", "Account")
+                        .WithMany()
+                        .HasForeignKey("AccountId");
+
+                    b.HasOne("Bank_Application.Models.SubAccount", "SubAccount")
+                        .WithMany()
+                        .HasForeignKey("SubAccountId");
+
+                    b.Navigation("Account");
+
+                    b.Navigation("SubAccount");
+                });
+
             modelBuilder.Entity("Bank_Application.Models.Recommendation", b =>
                 {
                     b.HasOne("Bank_Application.Models.Client", "Client")
@@ -687,11 +750,17 @@ namespace Bank_Application.Migrations
                         .HasForeignKey("AccountId")
                         .OnDelete(DeleteBehavior.Cascade);
 
+                    b.HasOne("Bank_Application.Models.Loan", "Loan")
+                        .WithMany()
+                        .HasForeignKey("LoanId");
+
                     b.HasOne("Bank_Application.Models.SubAccount", null)
                         .WithMany("ScheduledTransactions")
                         .HasForeignKey("SubAccountId");
 
                     b.Navigation("Account");
+
+                    b.Navigation("Loan");
                 });
 
             modelBuilder.Entity("Bank_Application.Models.SubAccount", b =>

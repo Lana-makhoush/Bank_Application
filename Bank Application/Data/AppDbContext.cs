@@ -25,8 +25,9 @@ namespace Bank_Application.Data
         public DbSet<TransactionLog> TransactionLogs { get; set; }
         public DbSet<TransactionType> TransactionTypes { get; set; }
         public DbSet<AccountTypeFeature> AccountTypeFeatures { get; set; }
-
+        public DbSet<Loan> Loans { get; set; }
         public DbSet<TransactionApproval> TransactionApprovals { get; set; }
+        
 
         public DbSet<Recommendation> Recommendations { get; set; }
 
@@ -154,6 +155,7 @@ namespace Bank_Application.Data
                 .HasForeignKey(tl => tl.ClientId)
                 .OnDelete(DeleteBehavior.Cascade);
         }
+
     }
 }
 

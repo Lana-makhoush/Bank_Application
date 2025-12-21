@@ -22,6 +22,7 @@ using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using QuestPDF.Infrastructure;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -92,6 +93,10 @@ builder.Services.AddScoped<IRecommendationService, RecommendationService>();
 builder.Services.AddScoped<ITransactionLogRepository, TransactionLogRepository>();
 builder.Services.AddScoped<IRecommendationRepository, RecommendationRepository>();
 builder.Services.AddScoped<ITransactionApprovalService, TransactionApprovalService>();
+builder.Services.AddScoped<ITransactionReportService, TransactionReportService>();
+
+builder.Services.AddHostedService<LoanSchedulerService>();
+builder.Services.AddScoped<LoanService>();
 builder.Services.AddScoped<IFeatureDecorator>(sp =>
 {
     var service = sp.GetRequiredService<FeatureService>();
@@ -154,6 +159,12 @@ builder.Services.AddAuthorization();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IPasswordHasher<Employee>, PasswordHasher<Employee>>();
 builder.Services.AddSignalR();
+
+
+
+QuestPDF.Settings.License = LicenseType.Community;
+
+builder.Services.AddControllers();
 
 
 builder.Services.AddSignalR();

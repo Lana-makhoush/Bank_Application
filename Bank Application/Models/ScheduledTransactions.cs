@@ -8,7 +8,8 @@ namespace Bank_Application.Models
     {
         [Key]
         public int? ScheduledTransactionId { get; set; }
-
+        public int? LoanId { get; set; }
+        public Loan? Loan { get; set; } = null!;
         public int? AccountId { get; set; }  
 
         [ForeignKey(nameof(AccountId))]
@@ -22,7 +23,7 @@ namespace Bank_Application.Models
         public string RecurrenceType { get; set; }
 
         [Required(ErrorMessage = "تاريخ التنفيذ التالي مطلوب")]
-        public DateTime? NextExecutionDate { get; set; }
+        public DateTime NextExecutionDate { get; set; }
 
         public bool? IsActive { get; set; } = true;
 

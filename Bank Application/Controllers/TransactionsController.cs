@@ -45,23 +45,6 @@ public class TransactionsController : ControllerBase
         return Ok(new { message = result.Message });
     }
 
-    //[Authorize(Roles = "Manager")]
-    //public async Task<IActionResult> Approve(int approvalId)
-    //{
-    //    //var approval = await _context.TransactionApprovals
-    //    //    .Include(a => a.TransactionLog)
-    //    //    .FirstOrDefaultAsync(a => a.Id == approvalId);
-
-    //    //approval.Status = "Approved";
-    //    //approval.ApprovedAt = DateTime.Now;
-    //    //approval.ApprovedByEmployeeId = managerId;
-
-    //    //await _context.SaveChangesAsync();
-
-    //    //// تنفيذ العملية المتوقفة
-    //    //await _transactionExecutor.ExecuteAsync(approval.TransactionLog);
-
-    //    return Ok("تمت الموافقة");
-    //}
+  
 
 }
