@@ -23,7 +23,7 @@ namespace Bank_Application.Services
             IAccountResolverService resolver,
             IClientAccountTransactionRepository clientAccountRepo,
         ITransactionLogRepository logRepo,
-        IAccountTransactionRepository accountRepo,
+        IAccountTransactionRepository accountTransactionRepo,
             ITransactionSubject notifier)
         {
             _context = context;
@@ -31,7 +31,7 @@ namespace Bank_Application.Services
             _notifier = notifier;
             _clientAccountRepo = clientAccountRepo;
             _logRepo = logRepo;
-            _accountTransactionRepo = accountRepo;
+            _accountTransactionRepo = accountTransactionRepo;
             // تسجيل الـ observer
             _notifier.Register(new NotificationObserver(
                 context.GetService<IHubContext<NotificationHub>>()));
