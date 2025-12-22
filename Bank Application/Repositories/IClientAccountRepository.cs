@@ -11,7 +11,7 @@ namespace Bank_Application.Repositories
         Task<(bool Success, string Message)> SuspendAccountAsync(int id);
 
         Task<(bool Success, string Message)> FreezeAccountAsync(int id);
-
+        Task<List<AccountStatus>> GetAllAsync();
 
     }
 }

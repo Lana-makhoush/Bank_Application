@@ -81,7 +81,12 @@ namespace Bank_Application.Repositories
             await _context.SaveChangesAsync();
             return (true, "تم تجميد الحساب الرئيسي");
         }
-
+        public async Task<List<AccountStatus>> GetAllAsync()
+        {
+            return await _context.AccountStatuses
+                .AsNoTracking()
+                .ToListAsync();
+        }
     }
 
 }
