@@ -57,7 +57,7 @@ public class SubAccountService : ISubAccountService
      int subAccountId,
      int statusId,
      SubAccountUpdateDto dto,
-     int subAccountTypeId // أضفنا المعامل هنا
+     int subAccountTypeId 
  )
     {
         var sub = await _repo.GetByIdAsync(subAccountId);

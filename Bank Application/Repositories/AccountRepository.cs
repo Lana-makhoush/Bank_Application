@@ -42,11 +42,7 @@ namespace Bank_Application.Repositories
             return await _context.Clients.FirstOrDefaultAsync(x => x.ClientId == clientId);
         }
 
-        //public async Task<AccountType?> GetAccountTypeById(int accountTypeId)
-        //{
-        //    return await _context.AccountTypes.FirstOrDefaultAsync(x => x.AccountTypeId == accountTypeId);
-        //}
-
+       
        
         public async Task<bool> ClientHasAccountType(int clientId, int accountTypeId)
         {

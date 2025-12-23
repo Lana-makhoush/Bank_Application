@@ -5,7 +5,7 @@ using Bank_Application.DesignPatterns;
 
 using Bank_Application.DesignPatterns.Decorator;
 using Bank_Application.Facade;
-using Bank_Application.Factories;
+//using Bank_Application.Factories;
 using Bank_Application.Hubs;
 using Bank_Application.Models;
 using Bank_Application.Repositories;
@@ -80,7 +80,7 @@ builder.Services.AddScoped<IAccountTypeFacade, AccountTypeFacade>();
 builder.Services.AddScoped<IClientFacade, ClientFacade>();
 builder.Services.AddScoped<IAccountFacadeService, AccountFacadeService>();
 
-builder.Services.AddScoped<factoryAccountType>();
+//builder.Services.AddScoped<factoryAccountType>();
 builder.Services.AddScoped<FeatureService>();
 builder.Services.AddScoped<IPasswordHasher<Employee>, PasswordHasher<Employee>>();
 builder.Services.AddScoped<IClientAuthRepository, ClientAuthRepository>();

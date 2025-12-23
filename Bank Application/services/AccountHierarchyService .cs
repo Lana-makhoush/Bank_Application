@@ -82,7 +82,7 @@ namespace Bank_Application.Services
        int subAccountId,
        int statusId,
        SubAccountUpdateDto dto,
-       int subAccountTypeId) // أضف المعامل الجديد
+       int subAccountTypeId) 
         {
             var updated = await _subAccountService.UpdateSubAccountAsync(subAccountId, statusId, dto, subAccountTypeId);
 
